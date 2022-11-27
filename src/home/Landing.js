@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/Epic-1.jpg'
+import Epic from '../assests/epic-fruitsBG.png'
+import BackgroundImg from '../assests/BG-1.jpg'
 import Trees from '../assests/treesImg.png'
+// import Trees from '../assests/people-in-garden.jpg'
+
 
 
 export default function Landing() {
@@ -9,6 +12,8 @@ export default function Landing() {
     return(
         <Container>
             <LeftBox>
+
+                {/* <BGImg src={BackgroundImg} alt='Epicurious' />˝ */}
                 <EpicuriousImg src={Epic} alt='Epicurious' />
             </LeftBox>
             <RightBox>
@@ -26,6 +31,7 @@ export default function Landing() {
 
 
 const Container = styled.div`
+    /* height: 30rem; */
     background-color: #FFE4E4;
     margin: 0;
     padding: 0;
@@ -53,8 +59,14 @@ const RightBox = styled.div`
 
 const EpicuriousImg = styled.img`
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
+    /* height: 500px; */
+`
+
+const BGImg = styled.img`
     /* position: absolute; */
+    /* z-index: 1; */
+    /* width: 100%; */
 `
 const Div1 = styled.div`
     display: flex;

@@ -14,9 +14,15 @@ export default function AllCategories() {
                 <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> to pursue pleasure and happiness around food and gardens. 
                     <br />Click below for more information on our tenants.</AboutEpic>
             </Title>
-            <Category />
-            <Category />
-            <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
         </Container>
     )
 }
@@ -25,7 +31,7 @@ export default function AllCategories() {
 
 const Container = styled.div`
     background-color: #FFE4E4;
-    margin: 0;
+    margin-bottom: 5rem;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -65,4 +71,8 @@ const AboutEpic = styled.p`
     margin: 0 5rem 3rem 5rem;
     font-size: 1.3rem;
     color: #707070;
+`
+
+const CategoryBox = styled.div`
+    /* margin: 0; */
 `

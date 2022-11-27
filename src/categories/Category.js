@@ -16,32 +16,31 @@ export default function Category() {
             <Btn onClick={toggler}><SpanBtn>Sunnyside Cafe |</SpanBtn><PBtn>American Breakfast</PBtn></Btn>
                 <MoreDetails style={{ display: open ? 'none' : 'block'}}>
 
-                    <LeftBox>
-                        <H4>Menu</H4>
-                        <Ul>
-                            <Li>Egg in any style</Li>
-                            <Li>House made bread</Li>
-                            <Li>Cassadila</Li>
-                            <Li>Burrito</Li>
-                            <Li>Queso para dos</Li>
-                            <Li>El farolito</Li>
-                        </Ul>
-                    </LeftBox>
+                    <MainInfoBox>
+                        <InfoBox>
+                            <H4>Menu</H4>
+                            <Ul>
+                                <Li>Egg in any style</Li>
+                                <Li>House made bread</Li>
+                                <Li>Cassadiladddddd</Li>
+                                <Li>Burrito0000</Li>
+                                <Li>Queso para dos</Li>
+                                <Li>El farolito</Li>
+                            </Ul>
+                        </InfoBox>
 
-                    <RightBox>
-                        <H4>More Info</H4>
-                        <Ul>
-                            <Li>party platter open</Li>
-                            <Li>business hours</Li>
-                            <Li>business days</Li>
-                        </Ul>
-                        <Ul>
-                            <Li>Call now</Li>
-                            <Li>link to website</Li>
-                            <Li>address</Li>
-                        </Ul>
-                    </RightBox>
-                    
+                        <InfoBox>
+                            <H4>More Info</H4>
+                            <Ul>
+                                <Li>party platter open</Li>
+                                <Li>business hours</Li>
+                                <Li>business days</Li>
+                                <Li>Call now</Li>
+                                <Li>link to website</Li>
+                                <Li>address</Li>
+                            </Ul>
+                        </InfoBox>
+                    </MainInfoBox>
                     <ImgBox>
                         <EpicuriousImg src={Epic} alt='Epicurious' />
                         <EpicuriousImg src={Epic} alt='Epicurious' />
@@ -79,21 +78,35 @@ const Btn = styled.button`
 
 `
 const MoreDetails = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 88%;
     background: #ffffff;
     border: 2px solid #FC5600;
-    /* margin-top: -1rem; */
     border-top: none;
 `
 
 const EpicuriousImg = styled.img`
     width: 250px;
 `
-const Ul = styled.ul`
+
+const MainInfoBox = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+`
+
+const InfoBox = styled.div`
+    border: 1px solid gray;
+    width: 300px;
+`
+
+const Ul = styled.ul`
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
     width: 200px;
     /* display: ; */
     /* border: 1px solid black; */
@@ -119,7 +132,7 @@ const ImgBox = styled.div`
 const H2 = styled.h2`
     display: block;
     position: relative;
-    left: 0;
+    /* left: 0; */
 `
 
 const H4 = styled.h3`
@@ -142,14 +155,3 @@ const PBtn = styled.p`
     align-items: center; */
 `
 
-const LeftBox = styled.div`
-    /* float: left; */
-    /* flex: 50%; */
-    border: 1px solid gray;
-    width: 50%;
-    `
-const RightBox = styled.div`
-    /* float: right */
-    border: 1px solid gray;
-    width: 50%;
-`
