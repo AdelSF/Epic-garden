@@ -1,28 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 import Category from './Category'
+import foodSeller from './../assests/data/restaurantsData.json';
 
 
 export default function AllCategories() {
-
+    
+    // name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours
     return(
-
         <Container>
             <Title>
                 <TopTitle>TENANTS</TopTitle>
                 <Services>Take Out - Dine In - Tea - Gifts</Services>
                 <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> to pursue pleasure and happiness around food and gardens. 
-                    <br />Click below for more information on our tenants.</AboutEpic>
+                </AboutEpic>
             </Title>
-                <Category />
-                <Category />
-                <Category />
-                <Category />
-                <Category />
-                <Category />
-                <Category />
-                <Category />
-                <Category />
+                {foodSeller.map((data) => {
+                    return(
+                        <Category 
+                            foodSellerData={data}
+                        />
+                    )
+                })}
         </Container>
     )
 }
@@ -37,10 +36,8 @@ const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* width: 90%; */
     border-top: 2px solid gray;
     background-color: #ffffff;
-
 `
 
 const P = styled.p`
@@ -64,7 +61,6 @@ const Services = styled.h4`
     letter-spacing: 5.5px;
     font-size: 2rem;
     margin: 1rem;
-    /* padding: 0; */
 `
 const AboutEpic = styled.p`
     font-weight: 500;

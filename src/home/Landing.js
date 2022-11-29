@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/epic-fruitsBG.png'
+import Epic from '../assests/small-epic.jpg'
 import BackgroundImg from '../assests/BG-1.jpg'
 import Trees from '../assests/treesImg.png'
 // import Trees from '../assests/people-in-garden.jpg'
@@ -32,7 +32,7 @@ export default function Landing() {
 
 const Container = styled.div`
     /* height: 30rem; */
-    background-color: #FFE4E4;
+    background-color: #fddfd7;
     margin: 0;
     padding: 0;
     display: flex;
@@ -99,14 +99,11 @@ const H4 = styled.h4`
     align-items: flex-end;
     margin: 0;
     padding: 0;
-    /* float: left; */
 `
 const TitleP = styled.p`
-    /* border-bottom: 1px solid black; */
     font-size: 2.2rem;
     text-align: left;
     margin-top: -2px;
-    /* margin: 10px; */
     padding: 0 10px;
     font-family: 'Karantina', cursive;
     color: gray;

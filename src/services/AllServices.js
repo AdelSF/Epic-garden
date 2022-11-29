@@ -8,9 +8,6 @@ export default function AllServices() {
     return(
         <Container>
             <Service />
-            <Service />
-            <Service />
-            <Service />
         </Container>
     )
 }
@@ -18,12 +15,12 @@ export default function AllServices() {
 
 
 const Container = styled.div`
-    border: 1px solid black;
+    background-color: #D0FFFD;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 `

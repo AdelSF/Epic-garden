@@ -1,62 +1,84 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/PHOTO-2022-11-11-02-12-52.jpg'
+import QrCode from '../assests/qrcode.jpg'
+import FoodExample from '../assests/flat-lay-batch-cooking-composition.jpg'
+import Arrow from '../assests/arrow-down.png'
+// import restData from './../assests/data/restaurantsData.json';
 
-
-export default function Category() {
-
+export default function Category({ foodSellerData }) {
+    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours} = foodSellerData
     const [open, setOpen] = useState('none')
 
     function toggler() {
         setOpen(!open);
     }
 
-    return(
-        <Container>
-            <Btn onClick={toggler}><SpanBtn>Sunnyside Cafe |</SpanBtn><PBtn>American Breakfast</PBtn></Btn>
-                <MoreDetails style={{ display: open ? 'none' : 'block'}}>
 
+    return (
+        <>
+    
+            <Container>
+                <Btn onClick={toggler}><SpanBtn>{name} |</SpanBtn>
+                    <PBtn>{type}</PBtn>
+                    <ArrowDown src={Arrow} alt='arrow down' />
+                </Btn>
+                <MoreDetails style={{ display: open ? 'none' : 'block'}}>
                     <MainInfoBox>
                         <InfoBox>
-                            <H4>Menu</H4>
+                            <H4>Most Popular</H4>
                             <Ul>
-                                <Li>Egg in any style</Li>
-                                <Li>House made bread</Li>
-                                <Li>Cassadiladddddd</Li>
-                                <Li>Burrito0000</Li>
-                                <Li>Queso para dos</Li>
-                                <Li>El farolito</Li>
+                                <Li>{foods[0]}</Li>
+                                <Li>{foods[1]}</Li>
+                                <Li>{foods[2]}</Li>
+                                <Li>{foods[3]}</Li>
+                                <Li>{foods[4]}</Li>
                             </Ul>
                         </InfoBox>
 
+                        <InfoBox>
+                            <H4>Contact Info</H4>
+                            <Ul>
+                                <Li>Phone:{number}</Li>
+                                <Li>{address}</Li>
+                                <Li>Business days: {workDays}</Li>
+                                <Li>Business hours: {workHours}</Li>
+                                <Li>Delivery: {delivery}</Li>
+                            </Ul>
+                        </InfoBox>
                         <InfoBox>
                             <H4>More Info</H4>
                             <Ul>
-                                <Li>party platter open</Li>
-                                <Li>business hours</Li>
-                                <Li>business days</Li>
-                                <Li>Call now</Li>
-                                <Li>link to website</Li>
-                                <Li>address</Li>
+                                <Li>Party platter: {partyPlatter}</Li>
+                                <Li><a href={webside} target="_blank">Visit The Website</a></Li>
+                                <Li>Vegetarian Food: {vegetableOption}</Li>
+                                <Li>Vegan Food: {veganOptions}</Li>
                             </Ul>
+                        </InfoBox>
+                        <InfoBox>
+                            <H4>See the Full Menu</H4>
+                            <QRExample src={QrCode} alt='Epicurious' />
                         </InfoBox>
                     </MainInfoBox>
                     <ImgBox>
-                        <EpicuriousImg src={Epic} alt='Epicurious' />
-                        <EpicuriousImg src={Epic} alt='Epicurious' />
-                        <EpicuriousImg src={Epic} alt='Epicurious' />
-                        <EpicuriousImg src={Epic} alt='Epicurious' />
+                        <ImgExample src={FoodExample} alt='Epicurious' />
+                        <ImgExample src={FoodExample} alt='Epicurious' />
+                        <ImgExample src={FoodExample} alt='Epicurious' />
+                        <ImgExample src={FoodExample} alt='Epicurious' />
                     </ImgBox>
 
                 </MoreDetails>
-        </Container>
+            </Container>
+
+        </>
     )
+            
+    
+
 }
 
 
 
 const Container = styled.div`
-    /* border: 1px solid black; */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -87,27 +109,43 @@ const MoreDetails = styled.div`
     border-top: none;
 `
 
-const EpicuriousImg = styled.img`
+const ImgBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #e6ffff;
+    padding: 1rem;
+    border-top: 1px solid lightgray;
+`
+
+const ImgExample = styled.img`
     width: 250px;
+    border: 2px solid gray;
+    border-radius: 1rem;
+`
+const QRExample = styled.img`
+    width: 150px;
 `
 
 const MainInfoBox = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 `
 
 const InfoBox = styled.div`
-    border: 1px solid gray;
-    width: 300px;
+    /* border-right: 1px solid lightgray; */
+    /* width: 300px; */
 `
 
 const Ul = styled.ul`
-    /* display: flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between; */
-    width: 200px;
+    justify-content: flex-start;
+    /* width: 200px; */
     /* display: ; */
     /* border: 1px solid black; */
 `
@@ -119,15 +157,13 @@ const Li = styled.li`
     /* padding: 20px; */
     /* list-style-type: none; */
     /* display: block; */
-    /* float: left; */
+    float: left;
+    text-align: left;
+    /* justify-content: flex-start; */
+
 `
 
-const ImgBox = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-`
+
 
 const H2 = styled.h2`
     display: block;
@@ -146,12 +182,23 @@ const SpanBtn = styled.span`
     margin: .5rem 2rem;
     font-size: 1.8rem;
     font-weight: 700;
+    color: #707070;
 `
 const PBtn = styled.p`
     float: left;
     margin: 1rem .1rem;
     font-size: .5em;
+    color: #707070;
     /* display: flex;
     align-items: center; */
+`
+
+const ArrowDown = styled.img`
+    border: 2px solid #FC5600;
+    padding: 8px;
+    border-radius: 50%;
+    float: right;
+    margin: 5px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 `
 
