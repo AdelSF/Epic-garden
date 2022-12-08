@@ -22,7 +22,8 @@ export default function useStorage(file) {
     }, async () => {
       const url = await storageRef.getDownloadURL();
       const createdAt = timestamp();
-      await collectionRef.add({ url, createdAt });
+      const name = file.name;
+      await collectionRef.add({ url, createdAt, name });
       setUrl(url);
     });
   }, [file]);

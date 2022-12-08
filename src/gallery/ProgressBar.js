@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 export default function ProgressBar ({ file, setFile }){
   const { progress, url } = useStorage(file);
-    useEffect(() => {
+  
+  
+  useEffect(() => {
     if (url) {
       setFile(null);
     }

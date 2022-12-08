@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Title from './comps/Title';
 import UploadForm from './UploadForm';
 import ImageGrid from './ImageGrid';
 import Modal from './Modal';
@@ -7,6 +6,9 @@ import styled from 'styled-components';
 import GardenGallery from '../assests/design-imgs/garden-img-text.jpg'
 import ButterflyOne from '../assests/design-imgs/bf-4.jpg'
 import ButterflyTwo from '../assests/design-imgs/bf-5.jpg'
+
+
+
 export default function Galleria() {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -17,7 +19,7 @@ export default function Galleria() {
             <H2>Garden Gallery</H2>
             <Img src={ButterflyTwo} alt="garden gallery text"/>
         </Div>
-        <UploadForm />
+        {/* <UploadForm /> */}
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
             <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
@@ -31,10 +33,9 @@ const Div = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center; git config --global user.name "Adel" .      git remote add origin git@github.com:"adelsf"/"Epic-garden"
-
+    justify-content: center;
     align-items: center;
-    `
+`
 
 const Img = styled.img`
     width: 150px;
