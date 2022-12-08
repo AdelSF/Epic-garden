@@ -8,6 +8,7 @@ import AllServices from './services/AllServices';
 import KitchenOnFirePrlx from './parallax/KitchenOfFirePrlx';
 import Footer from './shared/Footer';
 import AboutMozhai from './services/AboutMozhai';
+import Galleria  from './gallery/Galleria';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <AllServices />
       <KitchenOnFirePrlx />
       <AboutMozhai />
+      <Galleria />
       <Footer />
     </div>
   );

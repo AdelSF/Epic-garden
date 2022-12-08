@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import CookingIcon from './../assests/cooking-school-icon.jpg'
-import FoodTakeOutIcon from './../assests/take-out-icon-3.jpg'
-import CultureIcon from './../assests/culture-icon.jpg'
-import DineInIcon from './../assests/dine-in-icon.jpg'
+import CookingIcon from './../assests/design-imgs/cooking-school-icon.jpg'
+import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-3.jpg'
+import CultureIcon from './../assests/design-imgs/culture-icon.jpg'
+import DineInIcon from './../assests/design-imgs/dine-in-icon.jpg'
 
 export default function Service() {
 
@@ -31,7 +31,7 @@ export default function Service() {
             <Box>
                 <ImgIcon src={CultureIcon} alt="Art and culture icon"/>
                 <H3>CULTURE & ART</H3>
-                <H4>Mozhai Foundation</H4>
+                <H4>The Mozhai Foundation</H4>
                 <ServiceDescription>Studies have shown that expression through art can help people with depression, anxiety, and stress. Art has also been linked to improved memory, reasoning, and resilience in aging adults. We're diving into the powerful impact art can have on your life.</ServiceDescription>
             </Box>
         </Container>

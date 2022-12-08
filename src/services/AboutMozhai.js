@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import MozhaiImg from './../assests/mozhai-img.jpeg'
+import MozhaiImg from './../assests/design-imgs/mozhai-img.jpeg'
 
 
 export default function AboutMozhai() {

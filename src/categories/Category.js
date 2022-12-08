@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import QrCode from '../assests/qrcode.jpg'
-import FoodExample from '../assests/flat-lay-batch-cooking-composition.jpg'
-import Arrow from '../assests/arrow-down.png'
+import QrCode from '../assests/design-imgs/qrcode.jpg'
+import FoodExample from '../assests/design-imgs/flat-lay-batch-cooking-composition.jpg'
+import Arrow from '../assests/design-imgs/arrow-down.png'
 // import restData from './../assests/data/restaurantsData.json';
 
 export default function Category({ foodSellerData }) {

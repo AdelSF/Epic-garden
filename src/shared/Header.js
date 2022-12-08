@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from 'react';
 import "./header.css";
-import Logo from './../assests/logo-1.png'
+import Logo from './../assests/design-imgs/logo-1.png'
 
 export default function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);

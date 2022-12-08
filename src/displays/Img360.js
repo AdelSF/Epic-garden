@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/Epic-1.jpg'
-import Trees from '../assests/treesImg.png'
+import Epic from '../assests/design-imgs/Epic-1.jpg'
+import Trees from '../assests/design-imgs/treesImg.png'
 
 
 export default function Img360One() {

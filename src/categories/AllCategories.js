@@ -6,7 +6,6 @@ import foodSeller from './../assests/data/restaurantsData.json';
 
 export default function AllCategories() {
     
-    // name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours
     return(
         <Container>
             <Title>

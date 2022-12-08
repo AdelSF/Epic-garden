@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/small-epic.jpg'
-import BackgroundImg from '../assests/BG-1.jpg'
-import Trees from '../assests/treesImg.png'
+import Epic from '../assests/design-imgs/small-epic.jpg'
+import BackgroundImg from '../assests/design-imgs/BG-1.jpg'
+import Trees from '../assests/design-imgs/treesImg.png'
 // import Trees from '../assests/people-in-garden.jpg'
 
 
