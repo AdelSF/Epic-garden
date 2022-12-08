@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useFirestore from '../hooks/useFirestore';
 import styled from 'styled-components';
 import Imgix from "react-imgix";
@@ -6,7 +6,18 @@ import Imgix from "react-imgix";
 
 const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images');
+  // const [seeMore, setSeeMore] = useState([]);
+  // console.log("docs", docs)
 
+  // useEffect(() => {
+  //   if (!seeMore) {
+  //     let temp = [];
+  //     for(let i = 0; i < 8; i++) {
+  //       temp.push(docs[i]);
+  //     }
+  //     setSeeMore(temp);
+  //   }
+  // })
 
 
   return (
@@ -27,6 +38,7 @@ const ImageGrid = ({ setSelectedImg }) => {
             />      
         </div>
       ))}
+      <button>See More</button>
     </GridBox>
   )
 }

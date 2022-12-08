@@ -9,6 +9,7 @@ import KitchenOnFirePrlx from './parallax/KitchenOfFirePrlx';
 import Footer from './shared/Footer';
 import AboutMozhai from './services/AboutMozhai';
 import Galleria  from './gallery/Galleria';
+import Events from './events/Events';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Landing />
+      <Events />
       <AllCategories />
       <Img360One />
       <AllServices />
