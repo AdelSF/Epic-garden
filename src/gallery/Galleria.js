@@ -17,7 +17,7 @@ export default function Galleria() {
             <H2>Garden Gallery</H2>
             <Img src={ButterflyTwo} alt="garden gallery text"/>
         </Div>
-        {/* <UploadForm /> */}
+        <UploadForm />
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
             <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
