@@ -31,7 +31,8 @@ const Div = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: center; git config --global user.name "Adel" .      git remote add origin git@github.com:"adelsf"/"Epic-garden"
+
     align-items: center;
     `
 
