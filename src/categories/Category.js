@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import QrCode from '../assests/design-imgs/qrcode.jpg'
 import FoodExample from '../assests/design-imgs/flat-lay-batch-cooking-composition.jpg'
 import Arrow from '../assests/design-imgs/arrow-down.png'
-// import restData from './../assests/data/restaurantsData.json';
+
+
 
 export default function Category({ foodSellerData }) {
-    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours} = foodSellerData
+    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours, photos} = foodSellerData
     const [open, setOpen] = useState('none')
 
     function toggler() {
@@ -34,7 +35,6 @@ export default function Category({ foodSellerData }) {
                                 <Li>{foods[4]}</Li>
                             </Ul>
                         </InfoBox>
-
                         <InfoBox>
                             <H4>Contact Info</H4>
                             <Ul>
@@ -54,16 +54,19 @@ export default function Category({ foodSellerData }) {
                                 <Li>Vegan Food: {veganOptions}</Li>
                             </Ul>
                         </InfoBox>
-                        <InfoBox>
-                            <H4>See the Full Menu</H4>
-                            <QRExample src={QrCode} alt='Epicurious' />
-                        </InfoBox>
+                        {/* <InfoBox> */}
+                            {/* <H4>See the Full Menu</H4> */}
+                            {/* <ImgBox360>
+                                <iframe width="100%" height="640" frameBorder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no" src="https://kuula.co/share/N8v8G?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.27&thumbs=1&alpha=0.60"></iframe>            
+                            </ImgBox360> */}
+                            {/* <QRExample src={QrCode} alt='Epicurious' /> */}
+                        {/* </InfoBox> */}
                     </MainInfoBox>
                     <ImgBox>
-                        <ImgExample src={FoodExample} alt='Epicurious' />
-                        <ImgExample src={FoodExample} alt='Epicurious' />
-                        <ImgExample src={FoodExample} alt='Epicurious' />
-                        <ImgExample src={FoodExample} alt='Epicurious' />
+                        <ImgExample src={photos[0]} alt='food' />
+                        <ImgExample src={photos[1]} alt='food' />
+                        <ImgExample src={photos[2]} alt='food' />
+                        <ImgExample src={photos[2]} alt='food' />
                     </ImgBox>
 
                 </MoreDetails>
@@ -80,13 +83,13 @@ export default function Category({ foodSellerData }) {
 
 const Container = styled.div`
     width: 100%;
-    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: .5rem;
+  
 `
 
 const Btn = styled.button`
@@ -97,7 +100,9 @@ const Btn = styled.button`
     background: white;
     /* transition-delay: .5s; */
     box-shadow: 2px 2px 8px gray;
-
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+  }
 `
 const MoreDetails = styled.div`
     display: flex;
@@ -120,7 +125,7 @@ const ImgBox = styled.div`
 `
 
 const ImgExample = styled.img`
-    width: 250px;
+    width: 330px;
     border: 2px solid gray;
     border-radius: 1rem;
 `
@@ -145,22 +150,13 @@ const Ul = styled.ul`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* width: 200px; */
-    /* display: ; */
-    /* border: 1px solid black; */
 `
 
 const Li = styled.li`
-    /* flex:1 1 1 160px; */
-    /* flex: 1 1 auto; */
     margin: 10px;
-    /* padding: 20px; */
-    /* list-style-type: none; */
-    /* display: block; */
     float: left;
     text-align: left;
-    /* justify-content: flex-start; */
-
+    font-weight: 500;
 `
 
 
@@ -168,12 +164,9 @@ const Li = styled.li`
 const H2 = styled.h2`
     display: block;
     position: relative;
-    /* left: 0; */
 `
 
 const H4 = styled.h3`
-    /* display: flex;
-    justify-content: left; */
     margin: 1rem 2rem;
 `
 
@@ -183,14 +176,31 @@ const SpanBtn = styled.span`
     font-size: 1.8rem;
     font-weight: 700;
     color: #707070;
+    @media only screen and (max-width: 600px) {
+    font-size: 1.4rem;
+    /* display: none; */
+    margin: .6rem 1rem;
+    }
+    @media only screen and (max-width: 400px) {
+    font-size: 1.2rem;
+    margin: .7rem .2rem;
+  }
 `
 const PBtn = styled.p`
     float: left;
     margin: 1rem .1rem;
     font-size: .5em;
     color: #707070;
-    /* display: flex;
-    align-items: center; */
+    @media only screen and (max-width: 600px) {
+    /* display: none; */
+    /* margin: 0; */
+    font-size: .4em;
+    margin: 1rem 0;    
+}
+@media only screen and (max-width: 400px) {
+    font-size: .4em;
+    margin: 1rem 0;    
+  }
 `
 
 const ArrowDown = styled.img`
@@ -200,5 +210,22 @@ const ArrowDown = styled.img`
     float: right;
     margin: 5px;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    @media only screen and (max-width: 400px) {
+        margin-left: 5px;     
+        margin-top: 5px;     
+  }
 `
 
+const InfoBoxImg = styled.div`
+ 
+`
+
+
+const ImgBox360 = styled.div`
+    /* width: 500px;
+    height: 500px; */
+    /* margin: 1rem 0;
+    padding: .5rem 0;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray; */
+`

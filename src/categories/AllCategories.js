@@ -11,10 +11,11 @@ export default function AllCategories() {
             <Title>
                 <TopTitle>TENANTS</TopTitle>
                 <Services>Take Out - Dine In - Tea - Gifts</Services>
-                <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> to pursue pleasure and happiness around food and gardens. 
+                <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> <Span>to pursue pleasure and happiness around food and gardens.</Span> 
                 </AboutEpic>
             </Title>
                 {foodSeller.map((data) => {
+                    console.log(data)
                     return(
                         <Category 
                             foodSellerData={data}
@@ -60,12 +61,28 @@ const Services = styled.h4`
     letter-spacing: 5.5px;
     font-size: 2rem;
     margin: 1rem;
+@media only screen and (max-width: 700px) {
+    letter-spacing: 3.5px;
+    font-size: 1.4rem;
+} 
+@media only screen and (max-width: 400px) {
+      letter-spacing: 2.5px;
+  }
 `
 const AboutEpic = styled.p`
-    font-weight: 500;
     margin: 0 5rem 3rem 5rem;
     font-size: 1.3rem;
     color: #707070;
+    @media only screen and (max-width: 700px) {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    `
+
+const Span = styled.span`
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 `
 
 const CategoryBox = styled.div`

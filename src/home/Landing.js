@@ -47,10 +47,10 @@ const P = styled.p`
 const LeftBox = styled.div`
     display: flex;
     height: 25rem;
-    width: 50%;
+    /* width: 50%; */
 `
 const RightBox = styled.div`
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     /* position: absolute; */
@@ -59,6 +59,9 @@ const RightBox = styled.div`
 
 const EpicuriousImg = styled.img`
     margin: 0 auto;
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+  }
     /* padding: 2rem; */
     /* height: 500px; */
 `
@@ -74,11 +77,17 @@ const Div1 = styled.div`
 `
 const TreeImg = styled.img`
     padding: 3rem 0 0 2rem;
-    width: 330px;
+    /* width: 330px; */
     text-align: right;
     /* float: right; */
     /* position: absolute; */
-
+    @media only screen and (max-width: 700px) {
+    /* font-size: 1.4rem; */
+    /* display: none; */
+    display: none;
+    /* padding: 0; */
+    /* width: 200px; */
+  }
 `
 
 const H2 = styled.h2`
@@ -88,6 +97,11 @@ const H2 = styled.h2`
     text-align: left;
     margin-top: -10px;
     margin-bottom: 0;
+    @media only screen and (max-width: 700px) {
+    font-size: 3rem;
+    /* display: none; */
+    margin: .6rem 1rem;
+  }
     /* padding: 0; */
 `
 
@@ -99,6 +113,13 @@ const H4 = styled.h4`
     align-items: flex-end;
     margin: 0;
     padding: 0;
+    @media only screen and (max-width: 700px) {
+    font-size: 1.6rem;
+    /* padding: 0 1rem; */
+    margin: 0 auto;
+    /* display: none; */
+    /* margin: .6rem 1rem; */
+  }
 `
 const TitleP = styled.p`
     font-size: 2.2rem;
@@ -108,5 +129,9 @@ const TitleP = styled.p`
     font-family: 'Karantina', cursive;
     color: gray;
     letter-spacing: 5.5px;
+    @media only screen and (max-width: 700px) {
+        letter-spacing: 3.5px;
+    font-size: 1.5rem;
+  }
 `
 

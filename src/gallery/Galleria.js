@@ -3,7 +3,6 @@ import UploadForm from './UploadForm';
 import ImageGrid from './ImageGrid';
 import Modal from './Modal';
 import styled from 'styled-components';
-import GardenGallery from '../assests/design-imgs/garden-img-text.jpg'
 import ButterflyOne from '../assests/design-imgs/bf-4.jpg'
 import ButterflyTwo from '../assests/design-imgs/bf-5.jpg'
 
@@ -39,12 +38,18 @@ const Div = styled.div`
 
 const Img = styled.img`
     width: 150px;
-    height: 100px;
-    `
+    @media only screen and (max-width: 600px) {
+        width: 100px;
+        height: 70px;
+  }
+`
 
 const H2 = styled.h1`
     font-size: 3rem;
     color: white;
     text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+    @media only screen and (max-width: 1000px) {
+        font-size: 2rem;
+  }
 
 `

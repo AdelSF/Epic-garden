@@ -31,14 +31,25 @@ const Container = styled.div`
     border: 2px solid gray;
     border-radius: 1rem;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    justify-content: space-between;
     margin: 5rem 1rem;
+    flex-wrap: nowrap;
+    @media only screen and (max-width: 1000px) {
+        flex-wrap: wrap;
+    /* font-size: 1.4rem; */
+    /* display: none; */
+    /* margin: .6rem 1rem; */
+  }
 `
 
 const Box = styled.div`
     margin: .5rem;
     border-radius: .5rem;
     background-color: #ffffff;
+    @media only screen and (max-width: 1000px) {
+        margin: 0 auto;
+  }
 `
 
 const H2 = styled.h2`
@@ -48,6 +59,10 @@ const ImgIcon = styled.img`
     border-radius: .5rem;
     width: 300px;
     border-bottom: 2px solid lightgray;
+    @media only screen and (max-width: 1000px) {
+        padding-top: 1rem;
+        margin: 0 auto;
+  }
 `
 const ServiceDescription = styled.p`
     text-align: justify;

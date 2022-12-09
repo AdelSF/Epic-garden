@@ -6,19 +6,6 @@ import Imgix from "react-imgix";
 
 const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images');
-  // const [seeMore, setSeeMore] = useState([]);
-  // console.log("docs", docs)
-
-  // useEffect(() => {
-  //   if (!seeMore) {
-  //     let temp = [];
-  //     for(let i = 0; i < 8; i++) {
-  //       temp.push(docs[i]);
-  //     }
-  //     setSeeMore(temp);
-  //   }
-  // })
-
 
   return (
     <GridBox className="img-grid">
@@ -38,7 +25,6 @@ const ImageGrid = ({ setSelectedImg }) => {
             />      
         </div>
       ))}
-      <button>See More</button>
     </GridBox>
   )
 }
