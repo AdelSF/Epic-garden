@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Category from './Category'
+import Category from './Category';
 import foodSeller from './../assests/data/restaurantsData.json';
 
 

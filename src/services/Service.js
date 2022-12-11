@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import CookingIcon from './../assests/design-imgs/cooking-school-icon.jpg'
-import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-3.jpg'
-import CultureIcon from './../assests/design-imgs/culture-icon.jpg'
-import DineInIcon from './../assests/design-imgs/dine-in-icon.jpg'
+import CookingIcon from './../assests/design-imgs/cooking-school-icon.jpg';
+import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-3.jpg';
+import CultureIcon from './../assests/design-imgs/culture-icon.jpg';
+import DineInIcon from './../assests/design-imgs/dine-in-icon.jpg';
+import TreeGroup1 from './../assests/design-imgs/tree-Group1.png';
+import TreeGroup2 from './../assests/design-imgs/tree-Group-2.png';
 
 export default function Service() {
 
 
     return(
+        <>
         <Container>
+           
+
             <Box>
                 <ImgIcon src={DineInIcon} alt="dine in icon"/>
                 <H3>DINE IN & HANG OUT</H3>
@@ -34,19 +39,40 @@ export default function Service() {
                 <H4>The Mozhai Foundation</H4>
                 <ServiceDescription>Studies have shown that expression through art can help people with depression, anxiety, and stress. Art has also been linked to improved memory, reasoning, and resilience in aging adults. We're diving into the powerful impact art can have on your life.</ServiceDescription>
             </Box>
+         
+
         </Container>
+        {/* <Cont>
+            <BoxImg>
+            <BGImg src={TreeGroup1} alt="Art and culture icon"/>
+            </BoxImg>
+            <BoxImg>
+                <BGImg src={TreeGroup2} alt="Art and culture icon"/>
+            </BoxImg>
+        </Cont> */}
+        </>
+
+
     )
 }
 
 
 
 const Container = styled.div`
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 5rem 1rem;
+`
+const Cont = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 5rem 1rem; */
+    /* background-image: url(${TreeGroup1});
+    background-repeat: no-repeat;
+    background-size: auto; */
 `
 
 const Box = styled.div`
@@ -71,6 +97,14 @@ const ImgIcon = styled.img`
     width: 300px;
     border-bottom: 2px solid lightgray;
 `
+const BGImg = styled.img`
+    /* position: inline; */
+    z-index: 1;
+    margin-right: 5rem;
+    position: absolute;
+    /* left: 0; */
+    /* bottom: 0; */
+`
 const ServiceDescription = styled.p`
     width: 280px;
     text-align: justify;
@@ -79,4 +113,8 @@ const ServiceDescription = styled.p`
     font-size: 1.1rem;
     font-weight: 500;
     color: #52527a;
+`
+
+const BoxImg = styled.div`
+
 `

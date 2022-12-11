@@ -3,11 +3,14 @@ import styled from 'styled-components';
 import QrCode from '../assests/design-imgs/qrcode.jpg'
 import FoodExample from '../assests/design-imgs/flat-lay-batch-cooking-composition.jpg'
 import Arrow from '../assests/design-imgs/arrow-down.png'
+import { motion, AnimatePresence } from "framer-motion"
+import { Example } from './Example.tsx';
+
 
 
 
 export default function Category({ foodSellerData }) {
-    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours, photos} = foodSellerData
+    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours, photos} = foodSellerData;
     const [open, setOpen] = useState('none')
 
     function toggler() {
@@ -21,6 +24,14 @@ export default function Category({ foodSellerData }) {
             <Container>
                 <Btn onClick={toggler}><SpanBtn>{name} |</SpanBtn>
                     <PBtn>{type}</PBtn>
+                    {/* <motion.div
+                        animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 270, 270, 0],
+                        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        }}
+                    /> */}
+                    
                     <ArrowDown src={Arrow} alt='arrow down' />
                 </Btn>
                 <MoreDetails style={{ display: open ? 'none' : 'block'}}>
@@ -67,6 +78,18 @@ export default function Category({ foodSellerData }) {
                         <ImgExample src={photos[1]} alt='food' />
                         <ImgExample src={photos[2]} alt='food' />
                         <ImgExample src={photos[2]} alt='food' />
+                            {/* <AnimatePresence>
+                                <motion.img
+                                key={1}
+                                src={photos}
+                                initial={{ opacity: 0, y: 200 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                />
+                            </AnimatePresence> */}
+
+                            {/* <Example /> */}
+
                     </ImgBox>
 
                 </MoreDetails>
@@ -210,6 +233,10 @@ const ArrowDown = styled.img`
     float: right;
     margin: 5px;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    transition: transform .7s ease-in-out;
+    &:hover {
+        transform: rotate(180deg);
+    }
     @media only screen and (max-width: 400px) {
         margin-left: 5px;     
         margin-top: 5px;     
