@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import CookingIcon from './../assests/design-imgs/cooking-school-icon.jpg';
-import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-3.jpg';
-import CultureIcon from './../assests/design-imgs/culture-icon.jpg';
-import DineInIcon from './../assests/design-imgs/dine-in-icon.jpg';
+import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-minified-min.jpg';
+import CultureIcon from './../assests/design-imgs/culture-icon-minified-min.jpg';
+import DineInIcon from './../assests/design-imgs/dine-in-icon-minified-min.jpg';
 import TreeGroup1 from './../assests/design-imgs/tree-Group1.png';
 import TreeGroup2 from './../assests/design-imgs/tree-Group-2.png';
 

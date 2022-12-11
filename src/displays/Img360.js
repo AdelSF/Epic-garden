@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/design-imgs/Epic-1.jpg'
 import Trees from '../assests/design-imgs/treesImg.png'
 
 

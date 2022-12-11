@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import QrCode from '../assests/design-imgs/qrcode.jpg'
-import FoodExample from '../assests/design-imgs/flat-lay-batch-cooking-composition.jpg'
 import Arrow from '../assests/design-imgs/arrow-down.png'
 import { motion, AnimatePresence } from "framer-motion"
 import { Example } from './Example.tsx';
@@ -24,14 +22,6 @@ export default function Category({ foodSellerData }) {
             <Container>
                 <Btn onClick={toggler}><SpanBtn>{name} |</SpanBtn>
                     <PBtn>{type}</PBtn>
-                    {/* <motion.div
-                        animate={{
-                        scale: [1, 2, 2, 1, 1],
-                        rotate: [0, 0, 270, 270, 0],
-                        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                        }}
-                    /> */}
-                    
                     <ArrowDown src={Arrow} alt='arrow down' />
                 </Btn>
                 <MoreDetails style={{ display: open ? 'none' : 'block'}}>

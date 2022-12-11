@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import PeopleInGarden from './../assests/design-imgs/people-in-garden.jpg'
+import PeopleInGarden from './../assests/design-imgs/people-in-garden-minified-min.jpg'
 
 
 export default function Footer() {

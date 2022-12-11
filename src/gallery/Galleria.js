@@ -3,8 +3,8 @@ import UploadForm from './UploadForm';
 import ImageGrid from './ImageGrid';
 import Modal from './Modal';
 import styled from 'styled-components';
-import ButterflyOne from '../assests/design-imgs/bf-4.jpg'
-import ButterflyTwo from '../assests/design-imgs/bf-5.jpg'
+import ButterflyOne from '../assests/design-imgs/bf-4-minified-min.jpg'
+import ButterflyTwo from '../assests/design-imgs/bf-5-minified-min.jpg'
 
 
 
