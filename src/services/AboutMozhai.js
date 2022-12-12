@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import MozhaiImg from './../assests/design-imgs/mozhai-img-minified-min.jpeg'
 
@@ -27,19 +27,14 @@ export default function AboutMozhai() {
 
 
 const Container = styled.div`
-    /* border: 1px solid black; */
     border: 2px solid gray;
     border-radius: 1rem;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     margin: 5rem 1rem;
     flex-wrap: nowrap;
     @media only screen and (max-width: 1000px) {
         flex-wrap: wrap;
-    /* font-size: 1.4rem; */
-    /* display: none; */
-    /* margin: .6rem 1rem; */
   }
 `
 
@@ -68,18 +63,6 @@ const ServiceDescription = styled.p`
     text-align: justify;
     text-justify: inter-word;
     padding: 10px;
-`
-
-const Title = styled.h2`
-    padding: 20px;
-    font-size: 6rem;
-    color: lightgray;
-    letter-spacing: 2rem;
-    opacity: .5;
-    font-family: 'Karantina', cursive;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
-    margin: 0 auto;
-    margin-top: 30%;
 `
 
 const Button = styled.button`

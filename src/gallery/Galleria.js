@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import UploadForm from './UploadForm';
 import ImageGrid from './ImageGrid';
 import Modal from './Modal';
 import styled from 'styled-components';
@@ -18,7 +17,6 @@ export default function Galleria() {
             <H2>Garden Gallery</H2>
             <Img src={ButterflyTwo} alt="garden gallery text"/>
         </Div>
-        {/* <UploadForm /> */}
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
             <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />

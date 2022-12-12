@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 import styled from 'styled-components';
 import Imgix from "react-imgix";
@@ -10,7 +10,7 @@ const ImageGrid = ({ setSelectedImg }) => {
   return (
     <GridBox className="img-grid">
       {docs && docs.map(doc => (
-          <div onClick={() => setSelectedImg(doc.url)}>
+          <div onClick={() => setSelectedImg(doc.url)} key={doc.id}>
             <H2>{doc.name.split('-')[0]}</H2>
             <Imgix
               key={doc.id}

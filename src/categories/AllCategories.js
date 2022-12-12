@@ -15,10 +15,9 @@ export default function AllCategories() {
                 </AboutEpic>
             </Title>
                 {foodSeller.map((data) => {
-                    console.log(data)
                     return(
                         <Category 
-                            foodSellerData={data}
+                            foodSellerData={data} key={data.name}
                         />
                     )
                 })}
@@ -40,9 +39,6 @@ const Container = styled.div`
     background-color: #ffffff;
 `
 
-const P = styled.p`
-    color: red;
-`
 const Title = styled.div`
     display: block;
     width: 80%;
@@ -83,8 +79,4 @@ const Span = styled.span`
     margin-top: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
-`
-
-const CategoryBox = styled.div`
-    /* margin: 0; */
 `
