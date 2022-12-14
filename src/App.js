@@ -10,6 +10,7 @@ import Footer from './shared/Footer';
 import AboutMozhai from './services/AboutMozhai';
 import Galleria  from './gallery/Galleria';
 import Events from './events/Events';
+import GiftShop from './services/GiftShop';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <AllCategories />
       <Img360One />
       <AllServices />
+      <GiftShop />
       <KitchenOnFirePrlx />
       <AboutMozhai />
       <Galleria />

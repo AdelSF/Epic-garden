@@ -16,9 +16,12 @@ export default function AllCategories() {
             </Title>
                 {foodSeller.map((data) => {
                     return(
+                        <>
                         <Category 
                             foodSellerData={data} key={data.name}
-                        />
+                            />
+                        
+                        </>
                     )
                 })}
         </Container>

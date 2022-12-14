@@ -24,14 +24,15 @@ const Container = styled.div`
 `
 
 const KitchenOnFireImg = styled.div`
-    min-height: 600px; 
+    /* min-height: 600px;  */
     width: 100%;
+    max-width: 100%;
     background-image: url(${FireInHandImg});
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    /* display: block; */
     overflow: hidden;
 `
 const Title = styled.h2`

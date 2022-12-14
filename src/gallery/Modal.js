@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const Modal = ({ setSelectedImg, selectedImg }) => {
 
+  console.log("w", window.innerWidth)
+
   const handleClick = (e) => {
-    if (e.target.classList.contains('backdrop')) {
-      setSelectedImg(null);
-    }
+    if (window.innerWidth > 1200){
+
+      if (e.target.classList.contains('backdrop')) {
+        setSelectedImg(null);
+      }
+    } 
   }
 
   return (
