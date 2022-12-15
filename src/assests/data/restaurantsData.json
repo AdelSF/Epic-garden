@@ -146,7 +146,7 @@
     },
     {
         "name": "Darband",
-        "type": "Middle Eastern & Persian Cuisine",
+        "type": "Middle Eastern & Persian",
         "foods": ["Ghormesabzi", "Chicken With Rice", "Gheyme stew", "Kashk Bademjoon", "Kebab with Rice"],
         "workHours": "11AM - 10PM",
         "workDays": "Mon - Sun",
