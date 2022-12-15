@@ -11,8 +11,6 @@ export default function Landing() {
     return(
         <Container>
             <LeftBox>
-
-                {/* <BGImg src={BackgroundImg} alt='Epicurious' />˝ */}
                 <EpicuriousImg src={Epic} alt='Epicurious' />
             </LeftBox>
             <RightBox>
@@ -30,7 +28,6 @@ export default function Landing() {
 
 
 const Container = styled.div`
-    /* height: 30rem; */
     background-color: #fddfd7;
     margin: 0;
     padding: 0;
@@ -52,6 +49,9 @@ const RightBox = styled.div`
     /* width: 50%; */
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 500px) { // equal or less to 500px
+        margin: 0 auto;
+  }
     /* position: absolute; */
     /* margin: 300px; */
 `
@@ -59,7 +59,7 @@ const RightBox = styled.div`
 const EpicuriousImg = styled.img`
     margin: 0 auto;
     @media only screen and (max-width: 500px) {
-        width: 100%;
+        width: 95%;
   }
     /* padding: 2rem; */
     /* height: 500px; */
@@ -73,19 +73,15 @@ const BGImg = styled.img`
 const Div1 = styled.div`
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 500px) {
+        margin: 0 auto;
+  }
 `
 const TreeImg = styled.img`
     padding: 3rem 0 0 2rem;
-    /* width: 330px; */
     text-align: right;
-    /* float: right; */
-    /* position: absolute; */
     @media only screen and (max-width: 700px) {
-    /* font-size: 1.4rem; */
-    /* display: none; */
     display: none;
-    /* padding: 0; */
-    /* width: 200px; */
   }
 `
 
@@ -97,11 +93,10 @@ const H2 = styled.h2`
     margin-top: -10px;
     margin-bottom: 0;
     @media only screen and (max-width: 700px) {
-    font-size: 3rem;
-    /* display: none; */
-    margin: .6rem 1rem;
-  }
-    /* padding: 0; */
+        font-size: 3rem;
+        margin: .6rem 1rem;
+        text-align: center;
+    }
 `
 
 const H4 = styled.h4`
@@ -113,12 +108,10 @@ const H4 = styled.h4`
     margin: 0;
     padding: 0;
     @media only screen and (max-width: 700px) {
-    font-size: 1.6rem;
-    /* padding: 0 1rem; */
-    margin: 0 auto;
-    /* display: none; */
-    /* margin: .6rem 1rem; */
-  }
+        font-size: 1.6rem;
+        margin: 0 auto;
+        text-align: center;
+    }
 `
 const TitleP = styled.p`
     font-size: 2.2rem;
@@ -128,9 +121,10 @@ const TitleP = styled.p`
     font-family: 'Karantina', cursive;
     color: gray;
     letter-spacing: 5.5px;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 700px) { 
         letter-spacing: 3.5px;
     font-size: 1.5rem;
+    text-align: center;
   }
 `
 

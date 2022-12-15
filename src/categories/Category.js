@@ -17,7 +17,7 @@ export default function Category({ foodSellerData }) {
         <>
     
             <Container>
-                <Btn onClick={toggler}><SpanBtn>{name} |</SpanBtn>
+                <Btn onClick={toggler}><SpanBtn>{name}</SpanBtn>
                     <PBtn>{type}</PBtn>
                     <ArrowDown src={Arrow} alt='arrow down' />
                 </Btn>
@@ -95,8 +95,12 @@ const Btn = styled.button`
     background: white;
     /* transition-delay: .5s; */
     box-shadow: 2px 2px 8px gray;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* font-size: 1rem; */
   }
 `
 const MoreDetails = styled.div`
@@ -177,25 +181,26 @@ const SpanBtn = styled.span`
     font-weight: 700;
     color: #707070;
     @media only screen and (max-width: 600px) {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     /* display: none; */
     margin: .6rem 1rem;
     }
-    @media only screen and (max-width: 400px) {
+    /* @media only screen and (max-width: 400px) {
     font-size: 1.2rem;
     margin: .7rem .2rem;
-  }
+  } */
+  
 `
 const PBtn = styled.p`
     float: left;
-    margin: 1rem .1rem;
+    /* margin: 1rem .1rem; */
     font-size: .5em;
     color: #707070;
     @media only screen and (max-width: 600px) {
     /* display: none; */
     /* margin: 0; */
     font-size: .4em;
-    margin: 1rem 0;    
+    /* margin: 1rem 0;     */
 }
 @media only screen and (max-width: 400px) {
     font-size: .4em;
@@ -211,12 +216,15 @@ const ArrowDown = styled.img`
     margin: 5px;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     transition: transform .7s ease-in-out;
+    display: flex;
+    align-self: end;
+    align-items: center;
     &:hover {
         transform: rotate(180deg);
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         margin-left: 5px;     
-        margin-top: 5px;     
+        margin-top: 5px;
   }
 `
 
