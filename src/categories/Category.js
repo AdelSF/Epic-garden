@@ -93,16 +93,43 @@ const Btn = styled.button`
     border-radius: 2rem;
     font-size: 2rem;
     background: white;
-    /* transition-delay: .5s; */
     box-shadow: 2px 2px 8px gray;
     @media only screen and (max-width: 600px) {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* font-size: 1rem; */
   }
 `
+
+const SpanBtn = styled.span`
+    float: left;
+    margin: .5rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #707070;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.1rem;
+        margin: .6rem 1rem;
+    }
+    @media only screen and (max-width: 400px) {
+        margin: .7rem .2rem;
+    }
+  
+`
+const PBtn = styled.p`
+    float: left;
+    font-size: .5em;
+    color: #707070;
+    @media only screen and (max-width: 600px) {
+    display: block;
+    font-size: .4em;
+}
+@media only screen and (max-width: 400px) {
+    font-size: .4em;
+  }
+`
+
 const MoreDetails = styled.div`
     display: flex;
     justify-content: center;
@@ -118,7 +145,6 @@ const ImgBox = styled.div`
     flex-direction: row;
     overflow: scroll;
     width: 350px;
-    /* position: relative; */
     padding: 1rem;
     background: #e6ffff;
     border: 1px solid gray;
@@ -130,8 +156,6 @@ const ImgExample = styled.img`
     border: 2px solid gray;
     margin: 0 1rem;
     border-radius: 1rem;
-    /* display: table-cell */
-
 `
 const QRExample = styled.img`
     width: 150px;
@@ -145,8 +169,7 @@ const MainInfoBox = styled.div`
 `
 
 const InfoBox = styled.div`
-    /* border-right: 1px solid lightgray; */
-    /* width: 300px; */
+
 `
 
 const Ul = styled.ul`
@@ -174,39 +197,6 @@ const H4 = styled.h3`
     margin: 1rem 2rem;
 `
 
-const SpanBtn = styled.span`
-    float: left;
-    margin: .5rem 2rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #707070;
-    @media only screen and (max-width: 600px) {
-    font-size: 1.1rem;
-    /* display: none; */
-    margin: .6rem 1rem;
-    }
-    /* @media only screen and (max-width: 400px) {
-    font-size: 1.2rem;
-    margin: .7rem .2rem;
-  } */
-  
-`
-const PBtn = styled.p`
-    float: left;
-    /* margin: 1rem .1rem; */
-    font-size: .5em;
-    color: #707070;
-    @media only screen and (max-width: 600px) {
-    /* display: none; */
-    /* margin: 0; */
-    font-size: .4em;
-    /* margin: 1rem 0;     */
-}
-@media only screen and (max-width: 400px) {
-    font-size: .4em;
-    margin: 1rem 0;    
-  }
-`
 
 const ArrowDown = styled.img`
     border: 2px solid #FC5600;

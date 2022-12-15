@@ -60,6 +60,7 @@ const EpicuriousImg = styled.img`
     margin: 0 auto;
     @media only screen and (max-width: 500px) {
         width: 95%;
+        height: 95%;
   }
     /* padding: 2rem; */
     /* height: 500px; */
