@@ -52,18 +52,15 @@ const RightBox = styled.div`
     @media only screen and (max-width: 500px) { // equal or less to 500px
         margin: 0 auto;
   }
-    /* position: absolute; */
-    /* margin: 300px; */
 `
 
 const EpicuriousImg = styled.img` // width on mobile netlify and safari was not normal
     margin: 0 auto;
-    /* @media only screen and (max-width: 500px) { */
-        /* width: 95%; */
-        /* height: 95%; */
-  /* } */
-    /* padding: 2rem; */
-    /* height: 500px; */
+    width: 400px;
+    @media only screen and (max-width: 500px) {
+        width: 350px;
+        height: 350px;
+  }
 `
 
 const BGImg = styled.img`
