@@ -84,11 +84,10 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     margin: .5rem;
-  
 `
 
 const Btn = styled.button`
-    width: 90%;
+    width: 100%;
     border: 1px solid gray;
     border-radius: 2rem;
     font-size: 2rem;
@@ -99,7 +98,8 @@ const Btn = styled.button`
         display: flex;
         justify-content: space-between;
         align-items: center;
-  }
+        margin: 0;
+    }
 `
 
 const SpanBtn = styled.span`
@@ -226,7 +226,6 @@ const ImgArrow = styled.p`
 const ArrowRight = styled.i`
     border: solid black;
     border-width: 0 5px 5px 0;
-    /* display: inline-block; */
     padding: 6px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
