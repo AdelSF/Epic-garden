@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Arrow from '../assests/design-imgs/arrow-down.png';
+import Slider from './Slider.tsx';
 
 
 
@@ -22,6 +23,9 @@ export default function Category({ foodSellerData }) {
                     <ArrowDown src={Arrow} alt='arrow down' />
                 </Btn>
                 <MoreDetails style={{ display: open ? 'none' : 'block'}}>
+                    <Div>
+
+                    
                     <MainInfoBox>
                         <InfoBox>
                             <H4>Most Popular</H4>
@@ -52,18 +56,31 @@ export default function Category({ foodSellerData }) {
                                 <Li>Vegan Food: {veganOptions}</Li>
                             </Ul>
                         </InfoBox>
-                        <InfoBox> 
-                            <ImgBox>
-                                <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                <ImgExample src={photos[0].image} alt='food' />
-                                <ImgExample src={photos[1].image} alt='food' />
-                                <ImgExample src={photos[2].image} alt='food' />
-                                <ImgExample src={photos[2].image} alt='food' />
-                                <ImgExample src={photos[2].image} alt='food' />
-                                <ImgExample src={photos[2].image} alt='food' />
-                            </ImgBox>
-                        </InfoBox>
+
+
+
+                        {/* <InfoBox> */}
+                            
+                                    {/* <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[0].image} alt='food' />
+                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[1].image} alt='food' />
+                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[2].image} alt='food' />
+                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[2].image} alt='food' />
+                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[2].image} alt='food' />
+                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
+                                    <ImgExample src={photos[2].image} alt='food' /> */}
+                           
+                        {/* </InfoBox> */}
+
                     </MainInfoBox>
+                    <ImgBox>
+                        <Slider />
+                    </ImgBox>
+                    </Div>
                 </MoreDetails>
             </Container>
 
@@ -84,6 +101,13 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     margin: .5rem;
+`
+
+const MainInfoBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+ 
 `
 
 const Btn = styled.button`
@@ -132,43 +156,37 @@ const PBtn = styled.p`
 
 const MoreDetails = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 88%;
+    width: 95%;
     background: #ffffff;
     border: 2px solid #FC5600;
     border-top: none;
+    text-align: left;
+    @media only screen and (max-width: 600px) {
+        width: 95%;
+    }
 `
 
 const ImgBox = styled.div`
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-    width: 350px;
-    padding: 1rem;
-    background: #e6ffff;
-    border: 1px solid gray;
-    border-radius: 1rem;
+    max-width: 400px;
+    padding-bottom: 100px;
+    @media only screen and (max-width: 1445px) {
+    }
+    @media only screen and (max-width: 900px) {
+      margin: 0 auto;
+  }
 `
 
-const ImgExample = styled.img`
-    width: 250px;
-    border: 2px solid gray;
-    margin: 0 1rem;
-    border-radius: 1rem;
-`
-const QRExample = styled.img`
-    width: 150px;
-`
-
-const MainInfoBox = styled.div`
+const Div = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 `
 
 const InfoBox = styled.div`
+      /* flex: 50%; or - flex: 0 50% - or - flex-basis: 50% - */
 
 `
 
@@ -176,7 +194,7 @@ const Ul = styled.ul`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 `
 
 const Li = styled.li`
@@ -187,14 +205,9 @@ const Li = styled.li`
 `
 
 
-
-const H2 = styled.h2`
-    display: block;
-    position: relative;
-`
-
 const H4 = styled.h3`
     margin: 1rem 2rem;
+    padding: 0 1rem;
 `
 
 
@@ -216,17 +229,4 @@ const ArrowDown = styled.img`
         margin-left: 5px;     
         margin-top: 5px;
   }
-`
-
-const ImgArrow = styled.p`
-    display: flex;
-    align-items: center;
-`
-
-const ArrowRight = styled.i`
-    border: solid black;
-    border-width: 0 5px 5px 0;
-    padding: 6px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 `

@@ -14,6 +14,8 @@ export default function AllCategories() {
                 <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> <Span>to pursue pleasure and happiness around food and gardens.</Span> 
                 </AboutEpic>
             </Title>
+            <Content>
+
                 {foodSeller.map((data) => {
                     return(
                         <>
@@ -24,6 +26,7 @@ export default function AllCategories() {
                         </>
                     )
                 })}
+            </Content>
         </Container>
     )
 }
@@ -31,20 +34,33 @@ export default function AllCategories() {
 
 
 const Container = styled.div`
+    width: 100%;
     background-color: #FFE4E4;
     margin-bottom: 5rem;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     border-top: 2px solid gray;
     background-color: #ffffff;
 `
 
 const Title = styled.div`
-    display: block;
-    width: 80%;
+    /* display: block; */
+    width: 900px;
+    margin: 0 auto;
+    @media only screen and (max-width: 900px) {
+        width: 90%;
+  }
+  `
+const Content = styled.div`
+    width: 900px;
+    margin: 0 auto;
+    @media only screen and (max-width: 900px) {
+        width: 90%;
+        justify-content: center;
+    }
 `
 
 const TopTitle = styled.h2`
