@@ -34,9 +34,9 @@ export default function AllCategories() {
 
 
 const Container = styled.div`
-    width: 100%;
+    /* width: 100%; */
     background-color: #FFE4E4;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -51,15 +51,18 @@ const Title = styled.div`
     width: 900px;
     margin: 0 auto;
     @media only screen and (max-width: 900px) {
-        width: 90%;
+        width: 97%;
+        justify-content: center;
+        margin: 0;
   }
   `
 const Content = styled.div`
     width: 900px;
     margin: 0 auto;
     @media only screen and (max-width: 900px) {
-        width: 90%;
+        width: 97%;
         justify-content: center;
+        margin: 0;
     }
 `
 

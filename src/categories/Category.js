@@ -165,15 +165,13 @@ const MoreDetails = styled.div`
     border-top: none;
     text-align: left;
     @media only screen and (max-width: 600px) {
-        width: 95%;
+        /* width: 95%; */
     }
 `
 
 const ImgBox = styled.div`
     max-width: 400px;
     padding-bottom: 100px;
-    @media only screen and (max-width: 1445px) {
-    }
     @media only screen and (max-width: 900px) {
       margin: 0 auto;
   }
