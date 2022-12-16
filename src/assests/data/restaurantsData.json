@@ -13,23 +13,15 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-              "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe",
-              "caption": "San Francisco"
-            },
-            {
-              "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747",
-              "caption": "Darjeeling"
-            },
-            {
-              "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe",
-              "caption": "San Francisco"
-            },
-            {
-              "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747",
-              "caption": "Darjeeling"
-            }
-          ]
+              "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe",
+          
+             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747",
+             
+              "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe",
+              
+             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747"
+        ]
+            
     },
     {
         "name": "Kirala",
@@ -45,18 +37,9 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-14.jpg?alt=media&token=0085b7b7-2e4c-47d8-88a4-3467ed4af908&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "foodname"
-              },
-              {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-16.jpg?alt=media&token=fdc4b377-13ca-4d9f-b4fb-2fe989a90699&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "San Francisco"
-              },
-              {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-3.jpg?alt=media&token=5c434a3b-d0ea-4cb8-af0c-a6327049e748&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-              }
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-14.jpg?alt=media&token=0085b7b7-2e4c-47d8-88a4-3467ed4af908&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-16.jpg?alt=media&token=fdc4b377-13ca-4d9f-b4fb-2fe989a90699&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kirala-3.jpg?alt=media&token=5c434a3b-d0ea-4cb8-af0c-a6327049e748&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"
         ]
     },
     {
@@ -73,18 +56,9 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            }
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"
         ]
     },
     {
@@ -101,19 +75,9 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-4.jpg?alt=media&token=2365ddde-7219-4cce-b739-88c2870f3c06&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            }            
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-1.jpg?alt=media&token=6c6e47af-2775-4943-bec4-e27786668bbe&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mexicana-4.jpg?alt=media&token=2365ddde-7219-4cce-b739-88c2870f3c06&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"         
         ]
     },
     {
@@ -130,18 +94,9 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-2.jpg?alt=media&token=9d9de4e6-ad05-4a35-9e0e-2a55ae9df6d9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-31.jpg?alt=media&token=042f2cb5-9c72-4fc9-9361-96fc3d2690b3&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-18.jpg?alt=media&token=4d710d02-e2d6-4084-b45c-88be201f5865&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            }            
+                 "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-2.jpg?alt=media&token=9d9de4e6-ad05-4a35-9e0e-2a55ae9df6d9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-31.jpg?alt=media&token=042f2cb5-9c72-4fc9-9361-96fc3d2690b3&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+                 "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-18.jpg?alt=media&token=4d710d02-e2d6-4084-b45c-88be201f5865&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"            
         ]
     },
     {
@@ -158,18 +113,9 @@
         "veganOptions": "yes",
         "vegetableOption": "yes",
         "photos": [
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-2.jpg?alt=media&token=9d9de4e6-ad05-4a35-9e0e-2a55ae9df6d9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-31.jpg?alt=media&token=042f2cb5-9c72-4fc9-9361-96fc3d2690b3&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            },
-            {
-                "image": "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-18.jpg?alt=media&token=4d710d02-e2d6-4084-b45c-88be201f5865&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-                "caption": "Darjeeling"
-            }            
+          "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-2.jpg?alt=media&token=9d9de4e6-ad05-4a35-9e0e-2a55ae9df6d9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+          "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-31.jpg?alt=media&token=042f2cb5-9c72-4fc9-9361-96fc3d2690b3&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Tigerlily-18.jpg?alt=media&token=4d710d02-e2d6-4084-b45c-88be201f5865&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"
         ]
     }
-    ]
+]

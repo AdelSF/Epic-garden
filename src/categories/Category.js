@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Arrow from '../assests/design-imgs/arrow-down.png';
-import Slider from './Slider.tsx';
+import Card from './Slider.tsx';
 
 
 
@@ -56,29 +56,12 @@ export default function Category({ foodSellerData }) {
                                 <Li>Vegan Food: {veganOptions}</Li>
                             </Ul>
                         </InfoBox>
-
-
-
-                        {/* <InfoBox> */}
-                            
-                                    {/* <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[0].image} alt='food' />
-                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[1].image} alt='food' />
-                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[2].image} alt='food' />
-                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[2].image} alt='food' />
-                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[2].image} alt='food' />
-                                    <ImgArrow><ArrowRight></ArrowRight></ImgArrow>
-                                    <ImgExample src={photos[2].image} alt='food' /> */}
-                           
-                        {/* </InfoBox> */}
-
                     </MainInfoBox>
                     <ImgBox>
-                        <Slider />
+                        <Card url={foodSellerData.photos[0]}/>
+                        <Card url={foodSellerData.photos[1]}/>
+                        <Card url={foodSellerData.photos[2]}/>
+                        {/* <Card url={foodSellerData.photos[3]}/> */}
                     </ImgBox>
                     </Div>
                 </MoreDetails>
