@@ -13,7 +13,7 @@ export default function AboutMozhai() {
                 <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
             </Box>
             <Box>
-                <H2>About The Mozhai Foundation</H2>
+                <H2>The Mozhai Foundation</H2>
                 
                 
                 {/* <Card> */}

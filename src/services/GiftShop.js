@@ -24,7 +24,7 @@ export default function GiftShop() {
                 </ServiceDescription>
                 <ServiceDescription>Gifting is a mutually rewarding act, where the giver benefits as much as the receiver. Research shows that gift-giving not only makes the receiver feel happy and cared for, it also yields greater return for the giver too
                 </ServiceDescription>
-                <Button><ALink href='https://mozhaifoundation.org/' target="_blank">Get Direction</ALink></Button>           
+                <Button><ALink href='https://www.google.com/maps/place/Epicurious+Garden/@37.8798335,-122.2710551,17z/data=!3m1!4b1!4m5!3m4!1s0x80857ea13165eee9:0x87b0a87eae7ce71e!8m2!3d37.8798116!4d-122.2690607' target="_blank">Get Direction</ALink></Button>           
            
             </Box2>
         </Container>
