@@ -10,10 +10,6 @@ export default function GiftShop() {
     return(
         <Container>
             <Box1>
-
-                {/* <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-            <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/> */}
                 <Card url={MozhaiImg}/>
                 <Card url={MozhaiImg}/>
                 <Card url={MozhaiImg}/>

@@ -21,17 +21,19 @@ export default function KitchenOnFirePrlx() {
 const Container = styled.div`
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    background-color: #dc4e29;
 `
 
 const KitchenOnFireImg = styled.div`
-    /* min-height: 600px;  */
-    width: 100%;
-    max-width: 100%;
+    min-height: 600px; 
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* max-width: 100%; */
     background-image: url(${FireInHandImg});
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* display: block; */
     overflow: hidden;
 `
@@ -45,12 +47,22 @@ const Title = styled.h2`
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     margin: 0 auto;
     margin-top: 30%;
-`
+    @media only screen and (max-width: 900px) {
+        letter-spacing: 15px;
+        font-size: 2rem;
+        margin: 0;
+  }
+  `
 
 const Button = styled.button`
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
+    @media only screen and (max-width: 900px) {
+        /* letter-spacing: 15px; */
+        /* font-size: 2rem; */
+        margin-bottom: -5rem;
+    }
 `
 
 const ALink = styled.a`
