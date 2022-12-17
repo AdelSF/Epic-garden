@@ -61,7 +61,6 @@ export default function Category({ foodSellerData }) {
                         <Card url={foodSellerData.photos[0]}/>
                         <Card url={foodSellerData.photos[1]}/>
                         <Card url={foodSellerData.photos[2]}/>
-                        {/* <Card url={foodSellerData.photos[3]}/> */}
                     </ImgBox>
                     </Div>
                 </MoreDetails>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "../App.css";
 import { motion, Variants } from "framer-motion";
 
 interface Props {
@@ -24,7 +24,6 @@ const cardVariants: Variants = {
 
 export default function Card( { url }: Props) {
   const background = `linear-gradient(306deg)`;
-    console.log("uuu", url)
 
 
         return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MozhaiImg from './../assests/design-imgs/mozhai-img-minified-min.jpeg'
+import Card from '../categories/Slider.tsx';
 
 
 export default function GiftShop() {
@@ -8,20 +9,24 @@ export default function GiftShop() {
 
     return(
         <Container>
-            <Box>
+            <Box1>
+
+                {/* <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
+                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
+            <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/> */}
+                <Card url={MozhaiImg}/>
+                <Card url={MozhaiImg}/>
+                <Card url={MozhaiImg}/>
+            </Box1>
+            <Box2>
                 <H2>Souvenir Shop</H2>
-                <ServiceDescription>The Mozhai Foundation promotes the understanding and appreciation of Chinese art and culture by providing programs that educate the public, advance scholarship, and foster cultural exchange. These programs include art exhibitions, lectures and seminars, research projects, and the publication of books related to Chinese art and culture.
-                                    The Mozhai Foundation will also consider making grants for support of educational programs or other activities for the public benefit which are unrelated, or not strictly related, to Chinese art and culture, provided that such grants shall be made to other qualified nonprofit organizations.
+                <ServiceDescription>Explore our Gift shop at the center of the garden, We tend to feel a greater sense of happiness when we see the recipient gleam with joy as they open our gift. This releases endorphins into our brain which gives us the same euphoric feelings we experience when we are falling for someone or achieving something great.
+                </ServiceDescription>
+                <ServiceDescription>Gifting is a mutually rewarding act, where the giver benefits as much as the receiver. Research shows that gift-giving not only makes the receiver feel happy and cared for, it also yields greater return for the giver too
                 </ServiceDescription>
                 <Button><ALink href='https://mozhaifoundation.org/' target="_blank">Get Direction</ALink></Button>           
            
-            </Box>
-            <Box>
-                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-                <ImgIcon src={MozhaiImg} alt="About Mozhai foundation"/>
-            </Box>
+            </Box2>
         </Container>
     )
 }
@@ -29,25 +34,44 @@ export default function GiftShop() {
 
 
 const Container = styled.div`
-    border: 2px solid gray;
+    width: 900px;
+    border-top: 3px solid #FC5600;
+    border-bottom: 3px solid #FC5600;
     border-radius: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 5rem 1rem;
+    margin: 5rem auto;
     flex-wrap: wrap;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 900px) {
+        width: 100%;
+        justify-content: center;
         flex-wrap: wrap;
   }
 `
 
-const Box = styled.div`
+const Box1 = styled.div`
     /* margin: .5rem; */
     border-radius: .5rem;
     background-color: #ffffff;
-    margin: 1rem auto;
-    /* flex-direction: row; */
-    @media only screen and (max-width: 1000px) {
-        margin: 0 auto;
+    /* margin: 1rem auto; */
+    margin-top: -5rem;
+    width: 400px;
+    flex-direction: column;
+    @media only screen and (max-width: 900px) {
+        /* margin: 0; */
+  }
+`
+const Box2 = styled.div`
+    /* margin: .5rem; */
+    border-radius: .5rem;
+    background-color: #ffffff;
+    /* margin: 1rem auto; */
+    width: 450px;
+    flex-direction: column;
+    @media only screen and (max-width: 900px) {
+        margin-top: 5rem;
+        width: 100%;
   }
 `
 
@@ -68,13 +92,14 @@ const ServiceDescription = styled.p`
     padding: 0 5rem;
     text-align: justify;
     text-justify: inter-word;
-    /* padding: 10px; */
+    margin-bottom: 3rem;
 `
 
 const Button = styled.button`
     border: 1px solid gray;
     padding: 10px;
     border-radius: 5px;
+    margin: 2rem;
 `
 const ALink = styled.a`
     text-decoration: none;

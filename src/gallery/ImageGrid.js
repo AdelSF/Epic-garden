@@ -10,7 +10,8 @@ const ImageGrid = ({ setSelectedImg }) => {
   return (
     <GridBox className="img-grid">
       {docs && docs.map(doc => (
-          <div onClick={() => setSelectedImg(doc.url)} key={doc.id}>
+          // <div onClick={() => setSelectedImg(doc.url)} key={doc.id}>
+          <div>
             <H2>{doc.name.split('-')[0]}</H2>
             <Imgix
               key={doc.id}

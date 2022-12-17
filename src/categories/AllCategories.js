@@ -89,7 +89,7 @@ const Services = styled.h4`
 `
 const AboutEpic = styled.p`
     margin: 0 5rem 3rem 5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #707070;
     @media only screen and (max-width: 700px) {
         font-size: 1rem;
@@ -98,7 +98,8 @@ const AboutEpic = styled.p`
     `
 
 const Span = styled.span`
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+    padding-top: 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
 `
