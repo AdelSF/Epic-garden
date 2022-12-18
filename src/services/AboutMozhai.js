@@ -31,7 +31,7 @@ const Container = styled.div`
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
     flex-wrap: nowrap;
     @media only screen and (max-width: 1000px) {
         flex-wrap: wrap;
