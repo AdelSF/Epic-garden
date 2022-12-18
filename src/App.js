@@ -11,22 +11,26 @@ import AboutMozhai from './services/AboutMozhai';
 import Galleria  from './gallery/Galleria';
 import Events from './events/Events';
 import GiftShop from './services/GiftShop';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Landing />
-      <Events />
-      <AllCategories />
-      <Img360One />
-      <AllServices />
-      <GiftShop />
-      <KitchenOnFirePrlx />
-      <AboutMozhai />
-      <Galleria />
-      <Footer />
+      <ParallaxProvider>
+        <Header />
+        <Landing />
+        <Events />
+        <AllCategories />
+        <Img360One />
+        <AllServices />
+        <GiftShop />
+        <KitchenOnFirePrlx />
+        <AboutMozhai />
+        <Galleria />
+        <Footer />
+      </ParallaxProvider>
     </div>
   );
 }

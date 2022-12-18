@@ -21,7 +21,6 @@ export default function GiftShop() {
                 <ServiceDescription>Gifting is a mutually rewarding act, where the giver benefits as much as the receiver. Research shows that gift-giving not only makes the receiver feel happy and cared for, it also yields greater return for the giver too
                 </ServiceDescription>
                 <Button><ALink href='https://www.google.com/maps/place/Epicurious+Garden/@37.8798335,-122.2710551,17z/data=!3m1!4b1!4m5!3m4!1s0x80857ea13165eee9:0x87b0a87eae7ce71e!8m2!3d37.8798116!4d-122.2690607' target="_blank">Get Direction</ALink></Button>           
-           
             </Box2>
         </Container>
     )
@@ -47,22 +46,17 @@ const Container = styled.div`
 `
 
 const Box1 = styled.div`
-    /* margin: .5rem; */
     border-radius: .5rem;
     background-color: #ffffff;
-    /* margin: 1rem auto; */
     margin-top: -5rem;
     width: 400px;
     flex-direction: column;
     @media only screen and (max-width: 900px) {
-        /* margin: 0; */
   }
 `
 const Box2 = styled.div`
-    /* margin: .5rem; */
     border-radius: .5rem;
     background-color: #ffffff;
-    /* margin: 1rem auto; */
     width: 450px;
     flex-direction: column;
     @media only screen and (max-width: 900px) {
@@ -74,21 +68,15 @@ const Box2 = styled.div`
 const H2 = styled.h2`
     margin: 2rem;
 `
-const ImgIcon = styled.img`
-    border-radius: .5rem;
-    width: 300px;
-    border-bottom: 2px solid lightgray;
-    margin: 2rem;
-    @media only screen and (max-width: 1000px) {
-        padding-top: 1rem;
-        margin: 0 auto;
-  }
-`
+
 const ServiceDescription = styled.p`
-    padding: 0 5rem;
+    margin: 1rem 3rem;
+    padding: 1rem;
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 3rem;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
 `
 
 const Button = styled.button`
