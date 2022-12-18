@@ -4,6 +4,7 @@ import Modal from './Modal';
 import styled from 'styled-components';
 import ButterflyOne from '../assests/design-imgs/bf-4-minified-min.jpg'
 import ButterflyTwo from '../assests/design-imgs/bf-5-minified-min.jpg'
+import UploadForm from './UploadForm';
 
 
 
@@ -12,6 +13,7 @@ export default function Galleria() {
 
   return (
     <>
+        {/* <UploadForm /> */}
         <Div>
             <Img src={ButterflyOne} alt="garden gallery text"/>
             <H2>Garden Gallery</H2>

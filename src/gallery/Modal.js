@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const Modal = ({ setSelectedImg, selectedImg }) => {
-
-  console.log("w", window.innerWidth)
 
   const handleClick = (e) => {
     if (window.innerWidth > 1200){

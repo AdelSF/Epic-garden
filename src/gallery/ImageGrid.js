@@ -42,6 +42,7 @@ const GridBox = styled.div`
 `
 
 const H2 = styled.h2`
+/* padding-top: 10px; */
   text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
   color: lightgray;
   opacity: .7;
