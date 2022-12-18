@@ -59,9 +59,6 @@ const Button = styled.button`
     padding: 10px;
     border-radius: 5px;
     margin: .5rem;
-    @media only screen and (max-width: 900px) {
-        /* margin-bottom: -5rem; */
-    }
 `
 
 const ALink = styled.a`
