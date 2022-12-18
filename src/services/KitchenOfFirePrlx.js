@@ -14,7 +14,7 @@ export default function KitchenOnFirePrlx() {
 
     return(
         <Container>
-            <Parallax speed={40} >
+            <Parallax speed={30} >
                 <Title>Kitchen On Fire</Title> 
                 <Button><ALink href='https://www.kitchenonfire.com/' target="_blank">About Cooking School</ALink></Button>           
                 <ImageFireInHands src={FireInHandImg} alt="kitchen image" />
