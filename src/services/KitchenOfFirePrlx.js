@@ -3,14 +3,11 @@ import styled from 'styled-components';
 // import FireInHandImg from './../assests/design-imgs/fire-in-hands-croped-minified-min.jpg'
 import FireInHandImgFullsize from './../assests/design-imgs/fire-in-hand-fullsize.jpg';
 import FireInHandImg from './../assests/design-imgs/fire-in-hands-croped-minified-min.jpg'
-import { Parallax, useParallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 
 export default function KitchenOnFirePrlx() {
 
-    const { ref } = useParallax<HTMLDivElement>({ speed: 100 });
-
-  
 
     return(
         <Container>

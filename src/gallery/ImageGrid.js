@@ -21,9 +21,9 @@ const ImageGrid = ({ setSelectedImg }) => {
                 fit: "crop",
                 fm: "jpg",
               }}
-              width={600}
-              height={600}
-            />      
+              width={450}
+              height={450}
+              />      
         </div>
       ))}
     </GridBox>
@@ -33,17 +33,15 @@ const ImageGrid = ({ setSelectedImg }) => {
 export default ImageGrid;
 
 const GridBox = styled.div`
+  background-color: black;
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   border-top: 6px solid lightgray;
-  padding: 1rem 0;
   border-bottom: 6px solid lightgray;
 `
 
 const H2 = styled.h2`
-  margin: 0 auto;
-  position: absolute;
   text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
   color: lightgray;
   opacity: .7;

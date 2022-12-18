@@ -11,8 +11,6 @@ export default function Service() {
     return(
         <>
         <Container>
-           
-
             <Box>
                 <ImgIcon src={DineInIcon} alt="dine in icon"/>
                 <H3>DINE IN & HANG OUT</H3>
