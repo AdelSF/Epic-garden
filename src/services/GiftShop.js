@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import MozhaiImg from './../assests/design-imgs/mozhai-img-minified-min.jpeg'
 import Card from '../categories/Slider.tsx';
 
 
@@ -10,9 +9,9 @@ export default function GiftShop() {
     return(
         <Container>
             <Box1>
-                <Card url={MozhaiImg}/>
-                <Card url={MozhaiImg}/>
-                <Card url={MozhaiImg}/>
+                <Card url={"https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-5.JPG?alt=media&token=125678d4-51e1-4797-af8c-232a4d25d14f&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"}/>
+                <Card url={"https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-4.JPG?alt=media&token=1981efa2-723d-409a-ad29-cbc6200fc2e4&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"}/>
+                <Card url={"https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-8.JPG?alt=media&token=9525a840-bba5-44cb-b250-b3a7e8a2b2b9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"}/>
             </Box1>
             <Box2>
                 <H2>Souvenir Shop</H2>
