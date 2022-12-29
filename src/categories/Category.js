@@ -182,12 +182,16 @@ const Li = styled.li`
     float: left;
     text-align: left;
     font-weight: 500;
+    @media only screen and (max-width: 800px) {
+        line-height: 5px;
+    }
 `
 
 
 const H4 = styled.h3`
     margin: 1rem 2rem;
     padding: 0 1rem;
+    line-height: 5px;
 `
 
 

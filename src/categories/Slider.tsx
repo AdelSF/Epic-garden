@@ -9,7 +9,7 @@ interface Props {
 
 const cardVariants: Variants = {
   offscreen: {
-    y: 300
+    y: 0
   },
   onscreen: {
     y: 50,
