@@ -63,6 +63,8 @@ export default function Category({ foodSellerData }) {
                         <Card url={foodSellerData.photos[2]}/>
                     </ImgBox>
                     </Div>
+                    {/* <CloseBtn onClick={toggler}>close</CloseBtn> */}
+
                 </MoreDetails>
             </Container>
 
@@ -213,4 +215,9 @@ const ArrowDown = styled.img`
         margin-left: 5px;     
         margin-top: 5px;
   }
+`
+const CloseBtn = styled.button`
+    background-color: lightgray;
+    border: 1px solid gray;
+    margin: 0 auto;
 `
