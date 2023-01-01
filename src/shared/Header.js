@@ -75,6 +75,9 @@ const Items = styled.nav`
   @media (max-width: 600px) {
     display: ${({displayStatus}) => displayStatus === '╳' ? 'flex' : 'none' };
     flex-direction: row;
+    font-size: 1.3rem;
+    margin-right: .3rem;
+
     /* height: 30vh; */
     /* margin: 1rem; */
     width: unset;
