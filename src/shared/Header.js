@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Logo from './../assests/design-imgs/logo-1.png';
+import Logo1 from './../assests/design-imgs/logo-1.png';
+import Logo2 from './../assests/design-imgs/logo-2.png';
 import styled from 'styled-components';
 
 
@@ -20,7 +21,8 @@ export default function Header({handleClick}) {
   return (
     <Menu>
       <a href="/">
-        <Img src={Logo} alt="logo" />
+        <BigLogo src={Logo1} alt="logo" />
+        <SmallLogo src={Logo2} alt="logo" />
       </a>
       <Items displayStatus={hamContent} >
 
@@ -40,9 +42,20 @@ export default function Header({handleClick}) {
   );
 }
 
-const Img = styled.img`
+const BigLogo = styled.img`
   width: 8rem;
   margin: 1rem;
+  @media (max-width: 600px) {
+    display: none;
+  }
+`
+const SmallLogo = styled.img`
+  width: 2.5rem;
+  margin: 1rem;
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+  }
 `
 
 const Menu = styled.header`
@@ -62,13 +75,13 @@ const Items = styled.nav`
   letter-spacing: 1px;
   @media (max-width: 600px) {
     display: ${({displayStatus}) => displayStatus === '╳' ? 'flex' : 'none' };
-    flex-direction: column;
-    height: 30vh;
-    margin-top: 2vh;
+    flex-direction: row;
+    /* height: 30vh; */
+    /* margin: 1rem; */
     width: unset;
     position: absolute;
-    right: 0;
-    top: 2rem;
+    right: 4rem;
+    top: 1rem;
   }
 `
 
@@ -78,6 +91,7 @@ const Item = styled.div`
   padding: 5px;
   cursor: pointer;
   width: 60px;
+  margin: 0 1rem;
   &:hover {
       text-shadow: 0px 0px 5px black;
       color: white;
