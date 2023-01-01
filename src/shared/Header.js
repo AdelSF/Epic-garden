@@ -7,7 +7,6 @@ import styled from 'styled-components';
 export default function Header({handleClick}) {
 
   const [hamContent, setHamContent] = useState('☰')
-  const [open, setOpen] = useState('none')
 
 
   function hamOnClick() {
@@ -88,19 +87,21 @@ const Items = styled.nav`
 const Item = styled.div`
   text-decoration: none;
   font-weight: 500;
-  padding: 5px;
+  /* padding: 5px; */
   cursor: pointer;
-  width: 60px;
-  margin: 0 1rem;
+  /* width: 40px; */
+  margin: .5rem 1rem;
   &:hover {
       text-shadow: 0px 0px 5px black;
       color: white;
       transition: .7s;
   }
   @media only screen and (max-width: 600px) {
-    background-color: #feece7;
-    border: 1px solid gray;
+    /* background-color: #feece7; */
+    /* border: 1px solid gray; */
+    /* justify-content: space-around; */
     border-radius: 5px;
+    font-weight: 400;
   }
 `
 
