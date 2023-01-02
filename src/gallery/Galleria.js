@@ -18,7 +18,6 @@ export default function Galleria() {
   return (
     <>
         {/* <UploadForm /> */}
-
         <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
