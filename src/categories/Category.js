@@ -15,8 +15,7 @@ export default function Category({ foodSellerData }) {
 
 
     return (
-        <>
-    
+        <>    
             <Container>
                 <Btn onClick={toggler}><SpanBtn>{name}</SpanBtn>
                     <PBtn>{type}</PBtn>
@@ -24,8 +23,6 @@ export default function Category({ foodSellerData }) {
                 </Btn>
                 <MoreDetails style={{ display: open ? 'none' : 'block'}}>
                     <Div>
-
-                    
                     <MainInfoBox>
                         <InfoBox>
                             <H4>Most Popular</H4>
@@ -63,8 +60,6 @@ export default function Category({ foodSellerData }) {
                         <Card url={foodSellerData.photos[2]}/>
                     </ImgBox>
                     </Div>
-                    {/* <CloseBtn onClick={toggler}>close</CloseBtn> */}
-
                 </MoreDetails>
             </Container>
 
@@ -148,9 +143,6 @@ const MoreDetails = styled.div`
     border: 2px solid #FC5600;
     border-top: none;
     text-align: left;
-    @media only screen and (max-width: 600px) {
-        /* width: 95%; */
-    }
 `
 
 const ImgBox = styled.div`
@@ -168,7 +160,6 @@ const Div = styled.div`
 `
 
 const InfoBox = styled.div`
-      /* flex: 50%; or - flex: 0 50% - or - flex-basis: 50% - */
 
 `
 

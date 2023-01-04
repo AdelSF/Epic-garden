@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './shared/Header';
 import './App.css';
 import Landing from './home/Landing';
@@ -14,7 +14,6 @@ import GiftShop from './services/GiftShop';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { useRef } from 'react';
 import ScrollToTop from './hooks/ScrollToTop';
-import { MdArrowDropDownCircle } from 'react-icons/md';
 
 function App() {
   const Services = useRef(null);
@@ -45,7 +44,7 @@ function App() {
         <ParallaxProvider>
         <Header handleClick={handleClick}/>
         <Landing />
-        <Events />
+        {/* <Events /> */}
         <AllCategories />
         <Img360One />
         <div ref={Services}>

@@ -33,20 +33,17 @@ export default function AllCategories() {
 
 
 const Container = styled.div`
-    /* width: 100%; */
     background-color: #FFE4E4;
     margin-bottom: 7rem;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: center;
     border-top: 2px solid gray;
     background-color: #ffffff;
 `
 
 const Title = styled.div`
-    /* display: block; */
     width: 900px;
     margin: 0 auto;
     @media only screen and (max-width: 900px) {

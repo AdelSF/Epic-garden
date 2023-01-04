@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MozhaiImg from './../assests/design-imgs/mozhai-img-minified-min.jpeg';
-import Card from '../categories/Slider.tsx';
+// import Card from '../categories/Slider.tsx';
 
 
 export default function AboutMozhai() {

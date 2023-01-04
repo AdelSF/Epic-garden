@@ -37,16 +37,11 @@ const Container = styled.div`
     justify-content: space-around;
 `
 
-const P = styled.p`
-    color: red;
-`
 const LeftBox = styled.div`
     display: flex;
     height: 25rem;
-    /* width: 50%; */
 `
 const RightBox = styled.div`
-    /* width: 50%; */
     display: flex;
     flex-direction: column;
     @media only screen and (max-width: 500px) { // equal or less to 500px
@@ -54,7 +49,7 @@ const RightBox = styled.div`
   }
 `
 
-const EpicuriousImg = styled.img` // width on mobile netlify and safari was not normal
+const EpicuriousImg = styled.img`
     margin: 0 auto;
     width: 400px;
     @media only screen and (max-width: 500px) {
@@ -63,11 +58,6 @@ const EpicuriousImg = styled.img` // width on mobile netlify and safari was not 
   }
 `
 
-const BGImg = styled.img`
-    /* position: absolute; */
-    /* z-index: 1; */
-    /* width: 100%; */
-`
 const Div1 = styled.div`
     display: flex;
     flex-direction: row;

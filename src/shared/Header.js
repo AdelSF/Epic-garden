@@ -75,8 +75,6 @@ const Items = styled.nav`
   @media (max-width: 600px) {
     display: ${({displayStatus}) => displayStatus === '╳' ? 'flex' : 'none' };
     flex-direction: row;
-    /* font-size: 1.3rem; */
-    /* margin-right: .3rem; */
     width: unset;
     position: absolute;
     right: 4rem;
@@ -87,9 +85,8 @@ const Items = styled.nav`
 const Item = styled.div`
   text-decoration: none;
   font-weight: 500;
-  /* padding: 5px; */
+  color: #595959;
   cursor: pointer;
-  /* width: 40px; */
   margin: .5rem 1rem;
   &:hover {
       text-shadow: 0px 0px 5px black;
@@ -97,9 +94,6 @@ const Item = styled.div`
       transition: .7s;
   }
   @media only screen and (max-width: 600px) {
-    /* background-color: #feece7; */
-    /* border: 1px solid gray; */
-    /* justify-content: space-around; */
     border-radius: 5px;
     font-weight: 400;
   }
