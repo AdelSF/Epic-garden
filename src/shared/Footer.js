@@ -47,7 +47,6 @@ const FooterImg = styled.img`
 const LeftBox = styled.div`
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
 `
 const RightBox = styled.div`
     width: 50%;

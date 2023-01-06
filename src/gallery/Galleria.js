@@ -14,14 +14,28 @@ import '../App.css';
 export default function Galleria() {
   const [selectedImg, setSelectedImg] = useState(null);
   const { scrollYProgress } = useScroll();
+  const [seeMore, setSeeMore] = useState('unset')
+  const [seeMoreContent, setSeeMoreContent] = useState("See All Images")
+
+  function displayImg() {
+    if (seeMore === '150vh') {
+        setSeeMore('unset')
+        setSeeMoreContent("See All Images")
+      } else {
+        setSeeMoreContent("See Less")
+        setSeeMore('150vh')
+    }
+}
 
   return (
     <>
+    <Container>
+    <GalleryBox displayStatus={seeMore}>
         {/* <UploadForm /> */}
         <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
-      />
+        />
 
         <Div>
             <Img src={ButterflyOne} alt="garden gallery text"/>
@@ -30,13 +44,28 @@ export default function Galleria() {
         </Div>
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
-            <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
-        )}
+          <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+          )}
+
+    </GalleryBox>
+    </Container>
+      <Btn onClick={displayImg}>{seeMoreContent}</Btn>
     </>
   );
 }
 
+const Container = styled.div`
+  /* box-shadow: inset 0 -20px 10px 0px #000000; */
+`
 
+
+const GalleryBox = styled.div`
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: ${({displayStatus}) => displayStatus === '150vh' ? 'unset' : '150vh' };
+    overflow: hidden;
+`
 const Div = styled.div`
     display: flex;
     flex-direction: row;
@@ -61,4 +90,24 @@ const H2 = styled.h1`
         font-size: 2rem;
   }
 
+`
+
+const Btn = styled.button`
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 1rem; */
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: -30px;
+    cursor: pointer;
+    /* padding: -20px; */
+    &:hover {
+      /* text-shadow: 0px 0px 5px black; */
+      color: white;
+      scale: 1.1;
+      transition: .5s;
+      background-color: gray;
+  }
 `

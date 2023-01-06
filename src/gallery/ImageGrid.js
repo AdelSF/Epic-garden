@@ -38,11 +38,11 @@ const GridBox = styled.div`
   overflow: hidden;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   border-top: 6px solid lightgray;
-  border-bottom: 6px solid lightgray;
+  /* border-bottom: 6px solid lightgray; */
+  /* box-shadow: inset 0 -10px 10px -10px #000000; */
 `
 
 const H2 = styled.h2`
-/* padding-top: 10px; */
   text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
   color: lightgray;
   opacity: .7;
