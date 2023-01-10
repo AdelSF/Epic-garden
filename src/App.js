@@ -44,7 +44,7 @@ function App() {
         <ParallaxProvider>
         <Header handleClick={handleClick}/>
         <Landing />
-        {/* <Events /> */}
+        <Events />
         <AllCategories />
         <Img360One />
         <div ref={Services}>

@@ -50,7 +50,7 @@ const Title = styled.h2`
   `
 
 const Button = styled.button`
-    border: 1px solid white;
+    border: 1px solid gray;
     padding: 10px;
     border-radius: 5px;
     margin: .5rem;
