@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ImageGrid from './ImageGrid';
-import Modal from './Modal';
 import styled from 'styled-components';
 import ButterflyOne from '../assests/design-imgs/bf-4-minified-min.jpg'
 import ButterflyTwo from '../assests/design-imgs/bf-5-minified-min.jpg'
@@ -12,7 +11,6 @@ import '../App.css';
 
 
 export default function Galleria() {
-  const [selectedImg, setSelectedImg] = useState(null);
   const { scrollYProgress } = useScroll();
   const [seeMore, setSeeMore] = useState('unset')
   const [seeMoreContent, setSeeMoreContent] = useState("See All Images")
@@ -42,11 +40,7 @@ export default function Galleria() {
             <H2>Garden Gallery</H2>
             <Img src={ButterflyTwo} alt="garden gallery text"/>
         </Div>
-        <ImageGrid setSelectedImg={setSelectedImg} />
-        { selectedImg && (
-          <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
-          )}
-
+        <ImageGrid />
     </GalleryBox>
     </Container>
       <Btn onClick={displayImg}>{seeMoreContent}</Btn>
@@ -55,7 +49,6 @@ export default function Galleria() {
 }
 
 const Container = styled.div`
-  /* box-shadow: inset 0 -20px 10px 0px #000000; */
 `
 
 
