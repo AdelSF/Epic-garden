@@ -53,9 +53,13 @@ const EpicuriousImg = styled.img`
     margin: 0 auto;
     width: 400px;
     @media only screen and (max-width: 500px) {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
   }
+  /* @media only screen and (max-width: 350px) {
+        width: 280px;
+        height: 280px;
+  } */
 `
 
 const Div1 = styled.div`

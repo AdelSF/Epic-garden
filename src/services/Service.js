@@ -57,6 +57,9 @@ const Box = styled.div`
     margin: .5rem;
     border-radius: .5rem;
     background-color: #ffffff;
+    /* @media only screen and (max-width: 500px) {
+        width: 300px;
+  } */
 `
 
 const H3 = styled.h3`
@@ -71,10 +74,15 @@ const ImgIcon = styled.img`
     border-radius: .5rem;
     width: 300px;
     border-bottom: 2px solid lightgray;
+    /* @media only screen and (max-width: 500px) {
+        width: 250px;
+
+  } */
 `
 
 const ServiceDescription = styled.p`
-    width: 280px;
+    margin: 0 auto;
+    width: 250px;
     text-align: justify;
     padding: 10px;
     font-size: 1.1rem;

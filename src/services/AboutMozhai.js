@@ -58,6 +58,13 @@ const ImgIcon = styled.img`
         padding-top: 1rem;
         margin: 0 auto;
   }
+  /* @media only screen and (max-width: 500px) {
+        padding-top: 1rem;
+        margin: 0 auto;
+        width: 250px;
+  }
+   */
+
 `
 const ServiceDescription = styled.p`
     text-align: justify;
