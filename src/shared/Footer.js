@@ -12,8 +12,8 @@ export default function Footer() {
                 <H4>VISIT US</H4>
                 <TitleP>Your one-stop-shop for takeout or hanging out</TitleP>
                 <p>1511 Shattuck Ave, Berkeley, CA 94709</p>
-                <Button><ALink href="https://www.google.com/maps/place/Epicurious+Garden/@37.8798335,-122.2710551,17z/data=!3m1!4b1!4m5!3m4!1s0x80857ea13165eee9:0x87b0a87eae7ce71e!8m2!3d37.8798116!4d-122.2690607" target="_blank">Get Direction</ALink></Button>           
-                <p>Questions & Feedbacks</p>
+                <Button><ALink href="https://www.google.com/maps/place/Epicurious+Garden/@37.8798335,-122.2710551,17z/data=!3m1!4b1!4m5!3m4!1s0x80857ea13165eee9:0x87b0a87eae7ce71e!8m2!3d37.8798116!4d-122.2690607" target="_blank">Get Directions</ALink></Button>           
+                <p>Questions & Feedback</p>
                 <Button><ALink href="mailto:info@epicuriousgarden.com" >Email Us</ALink></Button>           
 
             </LeftBox>

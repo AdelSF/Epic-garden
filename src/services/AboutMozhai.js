@@ -35,7 +35,7 @@ const Container = styled.div`
     flex-wrap: nowrap;
     @media only screen and (max-width: 1000px) {
         flex-wrap: wrap;
-  }
+    }
 `
 
 const Box = styled.div`

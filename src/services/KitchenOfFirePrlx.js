@@ -11,7 +11,7 @@ export default function KitchenOnFirePrlx() {
         <Container>
             <Parallax speed={30} >
                 <Title>Kitchen On Fire</Title> 
-                <Button><ALink href='https://www.kitchenonfire.com/' target="_blank">About Cooking School</ALink></Button>           
+                <Button><ALink href='https://www.kitchenonfire.com/' target="_blank">Classes & Events</ALink></Button>           
                 <ImageFireInHands src={FireInHandImg} alt="kitchen image" />
             </Parallax>
         </Container>
@@ -47,7 +47,7 @@ const Title = styled.h2`
         font-size: 2rem;
         margin: 0;
   }
-  `
+`
 
 const Button = styled.button`
     border: 1px solid gray;
