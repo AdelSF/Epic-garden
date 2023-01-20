@@ -129,28 +129,30 @@ const AccordionArrow = styled.img`
     transition: transform .4s ease-in-out;
 `
 const accordion = keyframes`
-    from {
-      max-height: 0;
+    0% {
+      /* max-height: 0; */
       /* opacity: 0; */
-      transform: translate3d(0, 0, 0);
+      /* transform: translate3d(0, 0, 0); */
       /* visibility: visible; */
+      display: none;
     }
-    to {
-      max-height: 100%;
+    100% {
+      /* max-height: 100%; */
       /* opacity: 1; */
-      transform: translate3d(0, -100%, 0);
+      /* transform: translate3d(0, -100%, 0); */
       /* visibility: hidden; */
+      display: flex;
     }
 `
 const MoreDetails = styled.div`
     /* visibility: ${({open})  => open ? 'hidden' : 'visible'}; */
-    max-height: ${({open})  => open ? '0px'  : '100%'};
+    /* max-height: ${({open})  => open ? '0px'  : '100%'}; */
     /* opacity: ${(props) => (props.open ? "0" : "1")}; */
     /* padding: ${(props) => (props.open ? "0 15px" : "15px")}; */
     /* ${({open})  => open && 'transition: max-height 2s ease-out;'} */
     /* opacity: ${({open})  => open ? '0'  : '1'}; */
-    /* display: ${({open})  => open ? 'flex'  : 'none'}; */
-    display: flex;
+    display: ${({open})  => open ? 'none'  : 'flex'};
+    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
     width: 95%;
@@ -160,10 +162,10 @@ const MoreDetails = styled.div`
     text-align: left;
     overflow: hidden;
     border-radius: .5rem;
-    /* transition: all 1s ease-in-out; */
-    /* animation-name: ${accordion};
+    transition: all 1s ease-in-out;
+    animation-name: ${accordion};
     animation-duration: 1s;
-    animation-timing-function: ease-in-out; */
+    animation-timing-function: ease-in-out;
 `
 
 
