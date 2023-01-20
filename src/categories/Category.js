@@ -4,6 +4,9 @@ import { keyframes } from 'styled-components'
 import Arrow from '../assests/design-imgs/arrow-down.png';
 import Card from './Slider.tsx';
 
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 
 export default function Category({ foodSellerData }) {
@@ -11,14 +14,14 @@ export default function Category({ foodSellerData }) {
     const [open, setOpen] = useState('none')
 
     return (
-        <Container>
-            <Accordion onClick={() => setOpen(!open)}>
+        <Accordion onClick={() => setOpen(!open)}>
+            <AccordionSummary>
                 <Restaurant>
                     <RestaurantName>{name}</RestaurantName>
                     <RestaurantType>{type}</RestaurantType>
                 </Restaurant>
                 <AccordionArrow open={open}  src={Arrow} alt='Accordion Arrow' />
-            </Accordion>
+            </AccordionSummary>
             <MoreDetails open={open}>
                 <MainInfoBox>
                     <InfoBox>
@@ -57,18 +60,30 @@ export default function Category({ foodSellerData }) {
                     <Card url={foodSellerData.photos[2]}/>
                 </ImgBox>
             </MoreDetails>
-        </Container>
+        </Accordion>
     )
 }
 
-const Container = styled.div`
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: .5rem;
+const Accordion = styled(MuiAccordion)`
+    box-shadow: 0;
+    margin-bottom: 1.2rem;
+`
+const AccordionSummary = styled(MuiAccordionSummary)`
+    height: 60px;
+    min-height: 60px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        min-height: 60px;
+        border-radius: 2rem;
+        font-size: 2rem;
+        background: white;
+        box-shadow: 2px 2px 8px gray;
+        cursor: pointer;
+    }
 `
 
 const MainInfoBox = styled.div`
@@ -77,21 +92,19 @@ const MainInfoBox = styled.div`
     width: 500px;
  
 `
-
-const Accordion = styled.div`
+const MoreDetails = styled(MuiAccordionDetails)`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    border: 1px solid gray;
-    border-radius: 2rem;
-    font-size: 2rem;
-    background: white;
-    box-shadow: 2px 2px 8px gray;
-    cursor: pointer;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 2px solid #FC5600;
+    border-top: none;
+    text-align: left;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 `
-
 const Restaurant = styled.div`
     display: flex;
     align-items: center;
@@ -128,47 +141,6 @@ const AccordionArrow = styled.img`
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     transition: transform .4s ease-in-out;
 `
-const accordion = keyframes`
-    0% {
-      /* max-height: 0; */
-      /* opacity: 0; */
-      /* transform: translate3d(0, 0, 0); */
-      /* visibility: visible; */
-      display: none;
-    }
-    100% {
-      /* max-height: 100%; */
-      /* opacity: 1; */
-      /* transform: translate3d(0, -100%, 0); */
-      /* visibility: hidden; */
-      display: flex;
-    }
-`
-const MoreDetails = styled.div`
-    /* visibility: ${({open})  => open ? 'hidden' : 'visible'}; */
-    /* max-height: ${({open})  => open ? '0px'  : '100%'}; */
-    /* opacity: ${(props) => (props.open ? "0" : "1")}; */
-    /* padding: ${(props) => (props.open ? "0 15px" : "15px")}; */
-    /* ${({open})  => open && 'transition: max-height 2s ease-out;'} */
-    /* opacity: ${({open})  => open ? '0'  : '1'}; */
-    display: ${({open})  => open ? 'none'  : 'flex'};
-    /* display: flex; */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 95%;
-    background: #ffffff;
-    border: 2px solid #FC5600;
-    border-top: none;
-    text-align: left;
-    overflow: hidden;
-    border-radius: .5rem;
-    transition: all 1s ease-in-out;
-    animation-name: ${accordion};
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-`
-
-
 
 const ImgBox = styled.div`
     max-width: 400px;
