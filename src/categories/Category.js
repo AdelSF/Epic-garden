@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { keyframes } from 'styled-components'
 import Arrow from '../assests/design-imgs/arrow-down.png';
 import Card from './Slider.tsx';
 
@@ -10,12 +9,11 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 
 export default function Category({ foodSellerData }) {
-    const {name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours, photos} = foodSellerData;
+    const { name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours } = foodSellerData;
     const [open, setOpen] = useState('none')
 
     return (
         <Accordion onClick={() => setOpen(!open)}>
-            {/* style={{boxShadow: "none"}} */}
             <AccordionSummary>
                 <Restaurant>
                     <RestaurantName>{name}</RestaurantName>
@@ -28,11 +26,7 @@ export default function Category({ foodSellerData }) {
                     <InfoBox>
                         <ItemsHeader>Most Popular</ItemsHeader>
                         <Items>
-                            <Item>{foods[0]}</Item>
-                            <Item>{foods[1]}</Item>
-                            <Item>{foods[2]}</Item>
-                            <Item>{foods[3]}</Item>
-                            <Item>{foods[4]}</Item>
+                            {foods.map((food, index) => <Item key={index}>{food}</Item>)}
                         </Items>
                     </InfoBox>
                     <InfoBox>
@@ -49,7 +43,7 @@ export default function Category({ foodSellerData }) {
                         <ItemsHeader>More Info</ItemsHeader>
                         <Items>
                             <Item>Party platter: {partyPlatter}</Item>
-                            <Item><a href={webside} target="_blank">Visit The Website</a></Item>
+                            <Item><a href={webside} target="_blank" rel="noopener">Website</a></Item>
                             <Item>Vegetarian Food: {vegetableOption}</Item>
                             <Item>Vegan Food: {veganOptions}</Item>
                         </Items>
@@ -67,23 +61,26 @@ export default function Category({ foodSellerData }) {
 
 const Accordion = styled(MuiAccordion)`
     margin-bottom: 1.2rem;
+    @media only screen and (max-width: 500px) {
+        .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+            padding: 0;
+        }
+    }
 `
 const AccordionSummary = styled(MuiAccordionSummary)`
     height: 60px;
     min-height: 60px;
     box-shadow: 2px 2px 8px gray;
-
     > div {
+        background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         height: 60px;
         min-height: 60px;
-        border-radius: 2rem;
         font-size: 2rem;
         background: white;
-        /* box-shadow: 2px 2px 8px gray; */
         cursor: pointer;
     }
 `
