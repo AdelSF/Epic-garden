@@ -56,9 +56,7 @@ const Content = styled.div`
     width: 900px;
     margin: 0 auto;
     @media only screen and (max-width: 900px) {
-        width: 97%;
-        justify-content: center;
-        margin: 0;
+        width: 95%;
     }
 `
 

@@ -66,23 +66,14 @@ export default function Category({ foodSellerData }) {
 }
 
 const Accordion = styled(MuiAccordion)`
-    box-shadow: none;
     margin-bottom: 1.2rem;
-    border-radius: 1rem;
-
 `
 const AccordionSummary = styled(MuiAccordionSummary)`
     height: 60px;
     min-height: 60px;
     box-shadow: 2px 2px 8px gray;
-    /* border-radius: 2rem; */
-    /* box-shadow: 0; */
 
     > div {
-        /* .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-            box-shadow: 0;
-        } */
-        box-shadow: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -101,9 +92,8 @@ const MainInfoBox = styled.div`
     display: flex;
     flex-direction: column;
     width: 500px;
-    border-radius: 1rem;
-    /* box-shadow: 0; */
 `
+
 const MoreDetails = styled(MuiAccordionDetails)`
     display: flex;
     justify-content: space-around;
@@ -116,7 +106,6 @@ const MoreDetails = styled(MuiAccordionDetails)`
     text-align: left;
     border-radius: 1rem;
     margin-bottom: 1rem;
-    /* box-shadow: 0; */
 `
 const Restaurant = styled.div`
     display: flex;
