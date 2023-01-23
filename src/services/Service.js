@@ -15,7 +15,7 @@ export default function Service() {
                 <ImgIcon src={DineInIcon} alt="dine in icon"/>
                 <H3>DINE IN & HANG OUT</H3>
                 <H4>In Our Beautiful Garden</H4>
-                <ServiceDescription>Not only is gathering together enjoyable, but it also nurtures our most important relationships and promotes a sense of belonging and community. A simple meal shared with friends or family can leave you feeling incredibly inspired, rejuvenated and connected.</ServiceDescription>
+                <ServiceDescription>Not only is gathering together enjoyable, but it also nurtures our most important relationships and promotes a sense of belonging and community. A simple meal shared with friends or family can leave you feeling incredibly inspired and connected.</ServiceDescription>
             </Box>
             <Box>
                 <ImgIcon src={CookingIcon} alt="cooking icon"/>
@@ -57,9 +57,6 @@ const Box = styled.div`
     margin: .5rem;
     border-radius: .5rem;
     background-color: #ffffff;
-    /* @media only screen and (max-width: 500px) {
-        width: 300px;
-  } */
 `
 
 const H3 = styled.h3`
@@ -74,16 +71,14 @@ const ImgIcon = styled.img`
     border-radius: .5rem;
     width: 300px;
     border-bottom: 2px solid lightgray;
-    /* @media only screen and (max-width: 500px) {
-        width: 250px;
-
-  } */
 `
 
 const ServiceDescription = styled.p`
     margin: 0 auto;
     width: 250px;
     text-align: justify;
+    /* word-spacing:-2px; */
+    text-justify: distribute;
     padding: 10px;
     font-size: .9rem;
     font-weight: 500;

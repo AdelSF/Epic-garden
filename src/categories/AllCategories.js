@@ -96,4 +96,7 @@ const Span = styled.span`
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 3px;
+    @media only screen and (max-width: 700px) {
+        letter-spacing: 0;
+    }
 `
