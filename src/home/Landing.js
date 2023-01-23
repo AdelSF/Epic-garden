@@ -52,14 +52,15 @@ const RightBox = styled.div`
 const EpicuriousImg = styled.img`
     margin: 0 auto;
     width: 400px;
+    align-self: center;
     @media only screen and (max-width: 500px) {
+        width: 300px;
+        height: 300px;
+  }
+  @media only screen and (max-width: 350px) {
         width: 250px;
         height: 250px;
   }
-  /* @media only screen and (max-width: 350px) {
-        width: 280px;
-        height: 280px;
-  } */
 `
 
 const Div1 = styled.div`

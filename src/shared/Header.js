@@ -25,18 +25,18 @@ export default function Header({handleClick}) {
       </a>
       <Items displayStatus={hamContent} >
 
-              <Item onClick={() => handleClick(1)}>
-                Services
-              </Item>
-              <Item onClick={() => handleClick(2)}>
-                Gallery
-              </Item>
-              <Item onClick={() => handleClick(3)}>
-                Contact
-              </Item>
+          <Item onClick={() => handleClick(1)}>
+            Services
+          </Item>
+          <Item onClick={() => handleClick(2)}>
+            Gallery
+          </Item>
+          <Item onClick={() => handleClick(3)}>
+            Contact
+          </Item>
 
-        </Items>
-        <Ham onClick={hamOnClick}>{hamContent}</Ham>
+      </Items>
+      <Ham onClick={hamOnClick}>{hamContent}</Ham>
     </Menu>
   );
 }

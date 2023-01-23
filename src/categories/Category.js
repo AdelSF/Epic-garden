@@ -91,7 +91,6 @@ const AccordionSummary = styled(MuiAccordionSummary)`
 const MainInfoBox = styled.div`
     display: flex;
     flex-direction: column;
-    /* width: 500px; */
 `
 
 const MoreDetails = styled(MuiAccordionDetails)`
