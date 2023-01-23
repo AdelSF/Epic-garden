@@ -61,16 +61,19 @@ export default function Category({ foodSellerData }) {
 
 const Accordion = styled(MuiAccordion)`
     margin-bottom: 1.2rem;
-    @media only screen and (max-width: 500px) {
+    /* @media only screen and (max-width: 500px) {
         .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
             padding: 0;
         }
-    }
+    } */
 `
 const AccordionSummary = styled(MuiAccordionSummary)`
     height: 60px;
     min-height: 60px;
     box-shadow: 2px 2px 8px gray;
+    @media only screen and (max-width: 500px) {
+        padding: 0 !important;
+    }
     > div {
         background-color: red;
         display: flex;
@@ -88,7 +91,7 @@ const AccordionSummary = styled(MuiAccordionSummary)`
 const MainInfoBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 500px;
+    /* width: 500px; */
 `
 
 const MoreDetails = styled(MuiAccordionDetails)`

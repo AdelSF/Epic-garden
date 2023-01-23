@@ -68,17 +68,21 @@ const Items = styled.nav`
   justify-content: space-around;
   align-items: center;
   width: 400px;
-  margin-right: .5rem;
+  /* margin-right: .5rem; */
   font-family: 'Karantina', cursive;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     display: ${({displayStatus}) => displayStatus === '╳' ? 'flex' : 'none' };
     flex-direction: row;
     width: unset;
     position: absolute;
     right: 4rem;
     top: 1rem;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 370px) {
+    width: 200px;
   }
 `
 
@@ -94,8 +98,15 @@ const Item = styled.div`
       transition: .7s;
   }
   @media only screen and (max-width: 600px) {
-    border-radius: 5px;
+    /* border-radius: 5px;  */
     font-weight: 400;
+    margin: .4rem 1rem;
+  }
+  @media only screen and (max-width: 370px) {
+    margin: 0 1rem;
+    /* border-radius: 5px; */
+    font-weight: 300;
+    font-size: 1.1rem;
   }
 `
 
