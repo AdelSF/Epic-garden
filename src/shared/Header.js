@@ -83,6 +83,7 @@ const Items = styled.nav`
   }
   @media only screen and (max-width: 370px) {
     width: 200px;
+    padding-top: .5rem;
   }
 `
 
