@@ -14,7 +14,7 @@ export default function GiftShop() {
                 <Card url={"https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-8.JPG?alt=media&token=9525a840-bba5-44cb-b250-b3a7e8a2b2b9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"}/>
             </Box1>
             <Box2>
-                <H2>Tibet Souvenir</H2>
+                <H2>Tibet Souvenirs</H2>
                 <ServiceDescription>Explore our Gift shop at the center of the garden, We tend to feel a greater sense of happiness when we see the recipient gleam with joy as they open our gift. This releases endorphins into our brain which gives us the same euphoric feelings we experience when we are falling for someone or achieving something great.
                 </ServiceDescription>
                 <ServiceDescription>Gifting is a mutually rewarding act, where the giver benefits as much as the receiver. Research shows that gift-giving not only makes the receiver feel happy and cared for, it also yields greater return for the giver too

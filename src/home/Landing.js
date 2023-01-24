@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/design-imgs/small-epic.jpg'
+import Epic from '../assests/design-imgs/Epicurious-min.png'
 import Trees from '../assests/design-imgs/treesImg.png'
 // import Trees from '../assests/people-in-garden.jpg'
 
@@ -12,6 +12,8 @@ export default function Landing() {
         <Container>
             <LeftBox>
                 <EpicuriousImg src={Epic} alt='Epicurious' />
+                <EpicuriousInfo>Epicurus, Greek Philosopher 341, BC</EpicuriousInfo>
+                <EpicuriousQoute>“The key to true happiness is centered around food, garden and friendship.”</EpicuriousQoute>
             </LeftBox>
             <RightBox>
                 <Div1>
@@ -39,7 +41,8 @@ const Container = styled.div`
 
 const LeftBox = styled.div`
     display: flex;
-    height: 25rem;
+    flex-direction: column;
+    height: 30rem;
 `
 const RightBox = styled.div`
     display: flex;
@@ -51,16 +54,26 @@ const RightBox = styled.div`
 
 const EpicuriousImg = styled.img`
     margin: 0 auto;
-    width: 400px;
+    width: 250px;
     align-self: center;
     @media only screen and (max-width: 500px) {
         width: 300px;
-        height: 300px;
+        /* height: 300px; */
   }
   @media only screen and (max-width: 350px) {
         width: 250px;
         height: 250px;
   }
+`
+
+const EpicuriousInfo = styled.h2`
+    margin: 0;
+    padding: 0;
+`
+const EpicuriousQoute = styled.p`
+font-weight: 600;
+    /* margin: 0; */
+    /* padding: 0; */
 `
 
 const Div1 = styled.div`

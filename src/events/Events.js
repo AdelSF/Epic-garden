@@ -9,7 +9,7 @@ export default function Events() {
 
     return(
         <EventBox>
-            <H2><span>Souvenir Shop</span> 
+            <H2><span>Tibet Souvenirs</span> 
              : 50% off on everything until end of March 2023</H2>
         </EventBox>
     )
