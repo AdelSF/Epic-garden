@@ -27,7 +27,7 @@ export default function Service() {
                 <ImgIcon src={FoodTakeOutIcon} alt="take out icon"/>
                 <H3>TAKE OUT</H3>
                 <H4>Many Delicious Choices</H4>
-                <ServiceDescription>When you have a busy household, finding time to make a home- cooked meals every night can be exhausting. When you need a break from the routine, ordering takeout from a restaurant is an excellent, delicious option that can benefit your family. pick up your phone and explore the garden's take out oprtions.</ServiceDescription>
+                <ServiceDescription>When you have a busy household, finding time to make home cooked meals every night can be exhausting. When you need a break from the routine, ordering takeout from a restaurant is an excellent, delicious option that can benefit your family. pick up your phone and explore the garden's take out oprtions.</ServiceDescription>
             </Box>
             <Box>
                 <ImgIcon src={CultureIcon} alt="Art and culture icon"/>

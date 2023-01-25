@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Epic from '../assests/design-imgs/Epicurious-min.png'
 import Trees from '../assests/design-imgs/treesImg.png'
-// import Trees from '../assests/people-in-garden.jpg'
 
 
 
@@ -21,7 +20,7 @@ export default function Landing() {
                     <TreeImg src={Trees} alt='Trees' />
                 </Div1>
                 <H2>Epicurious Garden</H2>
-                <TitleP>Your one-stop-shop for takeout or hanging out</TitleP>
+                <TitleP>Your one-stop shop for take out or hanging out</TitleP>
             </RightBox>
         </Container>
     )
@@ -42,7 +41,9 @@ const Container = styled.div`
 const LeftBox = styled.div`
     display: flex;
     flex-direction: column;
-    height: 30rem;
+    @media only screen and (max-width: 500px) {
+        height: 32rem;
+  }
 `
 const RightBox = styled.div`
     display: flex;
@@ -59,11 +60,11 @@ const EpicuriousImg = styled.img`
     @media only screen and (max-width: 500px) {
         width: 300px;
         /* height: 300px; */
-  }
-  @media only screen and (max-width: 350px) {
+    }
+    @media only screen and (max-width: 350px) {
         width: 250px;
         height: 250px;
-  }
+    }
 `
 
 const EpicuriousInfo = styled.h2`
@@ -71,9 +72,7 @@ const EpicuriousInfo = styled.h2`
     padding: 0;
 `
 const EpicuriousQoute = styled.p`
-font-weight: 600;
-    /* margin: 0; */
-    /* padding: 0; */
+    font-weight: 600;
 `
 
 const Div1 = styled.div`
