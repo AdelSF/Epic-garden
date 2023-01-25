@@ -162,12 +162,13 @@ const Items = styled.ul`
 `
 
 const Item = styled.li`
-    margin: 10px;
+    margin: .7rem;
     float: left;
     text-align: left;
     font-weight: 500;
-    @media only screen and (max-width: 800px) {
-        line-height: 5px;
+    @media only screen and (max-width: 500px) {
+        margin: .2rem 0;
+        font-weight: 400;
     }
 `
 
