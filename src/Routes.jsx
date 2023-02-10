@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
+import { BrowserRouter as Router, useRoutes, BrowserRouter } from 'react-router-dom'
 import Galleria from './gallery/Galleria'
 import Landing from './home/Landing'
 import Header from './shared/Header'
@@ -10,16 +10,16 @@ import About from './about/About'
 
 const AllRoutes = () => { 
     const routes = useRoutes([
-      { path:"/", element:<Landing />},
       { path:"/gallery", element:<Galleria /> },
-      { path:"/about", element:<About /> }
+      { path:"/about", element:<About /> },
+      { path:"/", element:<Landing />}
     ])
     return routes
   }
 
   const AppWrapper = () => {
     return (
-      <Router>
+      <Router history={BrowserRouter}>
         <Header />
         <AllRoutes />
         <Footer />

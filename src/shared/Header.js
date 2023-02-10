@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Header({handleClick}) {
+export default function Header() {
 
   const [hamContent, setHamContent] = useState('☰')
 
@@ -27,13 +27,13 @@ export default function Header({handleClick}) {
       </a>
       <Items displayStatus={hamContent} >
 
-          <Item onClick={() => handleClick(1)} to='/'>
+          <Item onClick={hamOnClick} to='/'>
             Home
           </Item>
-          <Item onClick={() => handleClick(2)} to='/gallery' >
+          <Item onClick={hamOnClick} to='/gallery' >
             Gallery
           </Item>
-          <Item onClick={() => handleClick(3)} to='/about'>
+          <Item onClick={hamOnClick} to='/about'>
             About
           </Item>
 
