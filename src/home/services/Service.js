@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import CookingIcon from './../assests/design-imgs/cooking-school-icon.jpg';
-import FoodTakeOutIcon from './../assests/design-imgs/take-out-icon-minified-min.jpg';
-import CultureIcon from './../assests/design-imgs/culture-icon-minified-min.jpg';
-import DineInIcon from './../assests/design-imgs/dine-in-icon-minified-min.jpg';
+import CookingIcon from './../../assests/design-imgs/cooking-school-icon.jpg';
+import FoodTakeOutIcon from './../../assests/design-imgs/take-out-icon-minified-min.jpg';
+import CultureIcon from './../../assests/design-imgs/culture-icon-minified-min.jpg';
+import DineInIcon from './../../assests/design-imgs/dine-in-icon-minified-min.jpg';
 
 export default function Service() {
 

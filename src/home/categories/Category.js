@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Arrow from '../assests/design-imgs/arrow-down.png';
+import Arrow from '../../assests/design-imgs/arrow-down.png';
 import Card from './Slider.tsx';
 
 import MuiAccordion from '@mui/material/Accordion';

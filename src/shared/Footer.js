@@ -10,10 +10,10 @@ export default function Footer() {
         <Container>
             <LeftBox>
                 <H4>VISIT US</H4>
-                <TitleP>Your one-stop shop for take out or hanging out</TitleP>
-                <p>1511 Shattuck Ave, Berkeley, CA 94709</p>
+                <Title>Your one-stop shop for take out or hanging out</Title>
+                <Info>1511 Shattuck Ave, Berkeley, CA 94709</Info>
                 <Button><ALink href="https://www.google.com/maps/place/Epicurious+Garden/@37.8798335,-122.2710551,17z/data=!3m1!4b1!4m5!3m4!1s0x80857ea13165eee9:0x87b0a87eae7ce71e!8m2!3d37.8798116!4d-122.2690607" target="_blank">Get Directions</ALink></Button>           
-                <p>Questions & Feedback</p>
+                <Info>Questions & Feedback</Info>
                 <Button><ALink href="mailto:info@epicuriousgarden.com" >Email Us</ALink></Button>           
 
             </LeftBox>
@@ -65,7 +65,7 @@ const H4 = styled.h4`
     margin: 0 auto;
     margin-top: 2rem;
 `
-const TitleP = styled.p`
+const Title = styled.p`
     font-size: 1rem;
     color: gray;
     margin-bottom: 3rem;
@@ -88,4 +88,9 @@ const ALink = styled.a`
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+`
+const Info = styled.p`
+     @media only screen and (max-width: 350px) {
+        font-size: .9rem;
+    }
 `

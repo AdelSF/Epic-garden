@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Category from './Category';
-import foodSeller from './../assests/data/restaurantsData.json';
+import foodSeller from '../../assests/data/restaurantsData.json';
 
 
 export default function AllCategories() {
@@ -10,8 +10,9 @@ export default function AllCategories() {
         <Container>
             <Title>
                 <TopTitle>TENANTS</TopTitle>
-                <Services>Take Out - Dine In - Tea - Gifts</Services>
-                <AboutEpic>Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> <Span>to pursue pleasure and happiness around food and gardens.</Span> 
+                <Services>Take Out - Dine In - Gifts</Services>
+                <AboutEpic>
+                    {/* Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> <Span>to pursue pleasure and happiness around food and gardens.</Span>  */}
                 </AboutEpic>
             </Title>
             <Content>

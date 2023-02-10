@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MozhaiImg from './../assests/design-imgs/mozhai-img-minified-min.jpeg';
+import MozhaiImg from './../../assests/design-imgs/mozhai-img-minified-min.jpeg';
 // import Card from '../categories/Slider.tsx';
 
 
@@ -58,12 +58,10 @@ const ImgIcon = styled.img`
         padding-top: 1rem;
         margin: 0 auto;
   }
-  /* @media only screen and (max-width: 500px) {
-        padding-top: 1rem;
-        margin: 0 auto;
-        width: 250px;
-  }
-   */
+  @media only screen and (max-width: 350px) {
+    width: 80%;
+    }
+ 
 
 `
 const ServiceDescription = styled.p`

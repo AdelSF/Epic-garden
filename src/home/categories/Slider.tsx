@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 import { motion, Variants } from "framer-motion";
 
 interface Props {

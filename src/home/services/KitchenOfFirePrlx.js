@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FireInHandImg from './../assests/design-imgs/fire-in-hands-croped-minified-min.jpg'
+import FireInHandImg from './../../assests/design-imgs/fire-in-hands-croped-minified-min.jpg'
 import { Parallax } from 'react-scroll-parallax';
 
 

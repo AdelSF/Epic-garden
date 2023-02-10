@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Logo1 from './../assests/design-imgs/logo-1.png';
 import Logo2 from './../assests/design-imgs/logo-2.png';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 
 export default function Header({handleClick}) {
@@ -25,14 +27,14 @@ export default function Header({handleClick}) {
       </a>
       <Items displayStatus={hamContent} >
 
-          <Item onClick={() => handleClick(1)}>
-            Services
+          <Item onClick={() => handleClick(1)} to='/'>
+            Home
           </Item>
-          <Item onClick={() => handleClick(2)}>
+          <Item onClick={() => handleClick(2)} to='/gallery' >
             Gallery
           </Item>
-          <Item onClick={() => handleClick(3)}>
-            Contact
+          <Item onClick={() => handleClick(3)} to='/about'>
+            About
           </Item>
 
       </Items>
@@ -86,7 +88,7 @@ const Items = styled.nav`
   }
 `
 
-const Item = styled.div`
+const Item = styled(Link)`
   text-decoration: none;
   font-weight: 500;
   color: #595959;

@@ -43,7 +43,6 @@ export default function Galleria() {
         <ImageGrid />
     </GalleryBox>
     </Container>
-      <Btn onClick={displayImg}>{seeMoreContent}</Btn>
     </>
   );
 }
@@ -56,7 +55,7 @@ const GalleryBox = styled.div`
     margin: 0;
     padding: 0;
     width: 100%;
-    height: ${({displayStatus}) => displayStatus === '150vh' ? 'unset' : '150vh' };
+    /* height: ${({displayStatus}) => displayStatus === '150vh' ? 'unset' : '150vh' }; */
     overflow: hidden;
 `
 const Div = styled.div`
