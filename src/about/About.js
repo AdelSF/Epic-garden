@@ -7,7 +7,10 @@ export default function About() {
 
     return(
         <Container>
-            <H2>Our Garden in Berkeley</H2>
+            <H2>Construction of our Garden in Berkeley</H2>
+            <ImgBox>
+                <iframe width="1047" height="698" src="https://www.youtube.com/embed/-Jmlrz4l0ug" title="Building Epicurious Gardens" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </ImgBox>
             <ImgBox>
                 <iframe width="100%" height="600" frameBorder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen src="https://kuula.co/share/N8v8G?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.27&thumbs=1&alpha=0.60"></iframe> 
             </ImgBox>
