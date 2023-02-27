@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, useRoutes, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
 import Galleria from './gallery/Galleria'
 import Landing from './home/Landing'
 import Header from './shared/Header'
