@@ -62,7 +62,7 @@ const SmallLogo = styled.img`
 const Menu = styled.header`
   display: flex;
   justify-content: space-between;
-  background-color: #fddfd7; 
+  /* background-color: #fddfd7;  */
   @media only screen and (max-width: 600px) {
     background-color: white;
   }

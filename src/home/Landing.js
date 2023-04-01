@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Epic from '../assests/design-imgs/Epicurious-min.png'
+import BigImg from '../assests/design-imgs/garden-bamboo-3.jpg'
+import SmallImg from '../assests/design-imgs/mobile.jpg'
 import Trees from '../assests/design-imgs/treesImg.png'
 import AllCategories from './categories/AllCategories';
 import Events from './Events';
@@ -19,20 +20,16 @@ export default function Landing() {
         <>
             <Container>
                 <LeftBox>
-                    <EpicuriousImg src={Epic} alt='Epicurious' />
+                    <BigBackgroundImg src={BigImg} alt='Epicurious' />
+                    <SmallBackgroundImg src={SmallImg} alt='Epicurious' />
                     <EpicuriousQoute>“The key to true happiness is centered around food, garden and friendship.”</EpicuriousQoute>
-                    <EpicuriousInfo>Epicurus, Greek Philosopher 341, BC</EpicuriousInfo>
                 </LeftBox>
                 <RightBox>
-                    <Div1>
-                        <H4>Welcome to</H4>
-                        <TreeImg src={Trees} alt='Trees' />
-                    </Div1>
                     <H2>Epicurious Garden</H2>
-                    <Title>Your one-stop shop for take out or hanging out</Title>
+                    <Title>Your One-Stop Epicurean Experience</Title>
                 </RightBox>
             </Container>
-            <Events />
+            {/* <Events /> */}
             <AllCategories />
             <Img360One />
             <AllServices />
@@ -71,18 +68,17 @@ const RightBox = styled.div`
     padding-top: 1rem;
 `
 
-const EpicuriousImg = styled.img`
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 auto;
-    width: 250px;
-    align-self: center;
+const BigBackgroundImg = styled.img`
+    width: 100%;
     @media only screen and (max-width: 500px) {
-        width: 300px;
+        display: none;
     }
-    @media only screen and (max-width: 350px) {
-        width: 250px;
-        /* height: 250px; */
+`
+const SmallBackgroundImg = styled.img`
+    width: 100%;
+    display: none;
+    @media only screen and (max-width: 500px) {
+        display: block;
     }
 `
 
@@ -92,6 +88,7 @@ const EpicuriousInfo = styled.h4`
     color: gray;
 `
 const EpicuriousQoute = styled.p`
+    text-transform: uppercase;
     margin: 0;
     padding-top: 1rem;
     font-weight: 700;
@@ -117,11 +114,12 @@ const TreeImg = styled.img`
 
 const H2 = styled.h2`
     font-size: 5rem;
-    color: #FC5600;
-    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+    color: black;
+    /* text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; */
     text-align: left;
     margin-top: -10px;
     margin-bottom: 0;
+    font-weight: 800;
     @media only screen and (max-width: 700px) {
         font-size: 3rem;
         margin: .6rem 1rem;
@@ -151,6 +149,7 @@ const Title = styled.p`
     font-family: 'Karantina', cursive;
     color: gray;
     letter-spacing: 5.5px;
+    margin: 1rem auto;
     @media only screen and (max-width: 700px) { 
     letter-spacing: 3.5px;
     font-size: 1.5rem;
