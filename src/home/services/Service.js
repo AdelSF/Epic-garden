@@ -75,8 +75,8 @@ const ImgIcon = styled.img`
 
 const ServiceDescription = styled.p`
     margin: 0 auto;
-    width: 250px;
-    text-align: justify;
+    width: 270px;
+    text-align: left;
     /* word-spacing:-2px; */
     text-justify: distribute;
     padding: 10px;

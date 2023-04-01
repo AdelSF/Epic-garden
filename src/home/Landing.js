@@ -90,10 +90,10 @@ const EpicuriousInfo = styled.h4`
 const EpicuriousQoute = styled.p`
     text-transform: uppercase;
     margin: 0;
-    padding-top: 1rem;
+    padding: 1rem;
     font-weight: 700;
     @media only screen and (max-width: 350px) {
-        padding: 0.5rem;
+        /* padding:  */
     }
 `
 
