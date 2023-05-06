@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Category from './Category';
 import foodSeller from '../../assests/data/restaurantsData.json';
+import nonFoodSellerData from '../../assests/data/otherTenantsData.json';
+import OtherCategories from './OtherCategories';
 
 
 export default function AllCategories() {
@@ -10,13 +12,12 @@ export default function AllCategories() {
         <Container>
             <Title>
                 <TopTitle>TENANTS</TopTitle>
-                <Services>Take Out - Dine In - Gifts</Services>
+                <Services>Take Out & Dine In</Services>
                 <AboutEpic>
                     {/* Epicurious Garden shares the same vision as the famous Greek philosopher Epicurious:<br /> <Span>to pursue pleasure and happiness around food and gardens.</Span>  */}
                 </AboutEpic>
             </Title>
             <Content>
-
                 {foodSeller.map((data) => {
                     return(
                         <div key={data.name}>
@@ -26,6 +27,18 @@ export default function AllCategories() {
                         </div>
                     )
                 })}
+            </Content>
+            <Services>Cooking School, Gifts & Culture</Services>
+            <Content>
+                {nonFoodSellerData.map((data) => {
+                    return(
+                        <div key={data.name}>
+                            <OtherCategories 
+                                noneFoodSellerData={data} key={data.name}
+                                />
+                            </div>
+                        )
+                    })}
             </Content>
         </Container>
     )

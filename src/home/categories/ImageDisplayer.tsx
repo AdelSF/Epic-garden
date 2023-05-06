@@ -1,9 +1,8 @@
 import React from "react";
-import "../../App.css";
 import { motion, Variants } from "framer-motion";
 
 interface Props {
-  url : string
+    ImgUrl : string
 }
 
 
@@ -22,9 +21,8 @@ const cardVariants: Variants = {
   }
 };
 
-export default function Card( { url }: Props) {
+export default function ImageDisplayer( { ImgUrl }: Props) {
   const background = `linear-gradient(306deg)`;
-
 
         return (
           <motion.div
@@ -34,7 +32,7 @@ export default function Card( { url }: Props) {
             viewport={{ once: true, amount: 0.8 }}
           >
             <div className="splash" style={{ background }} />
-            <motion.img src={url} className="card" variants={cardVariants}>
+            <motion.img src={ImgUrl} className="card" variants={cardVariants}>
             </motion.img>
           </motion.div>
         );

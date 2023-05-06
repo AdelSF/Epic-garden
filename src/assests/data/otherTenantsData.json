@@ -1,0 +1,48 @@
+[
+    {
+        "name": "The Mozhai Foundation",
+        "type": "Non-Profit Organization",
+        "workHours": "Not specified",
+        "workDays": "Not specified",
+        "number": "(510) 665-8585",
+        "address": "1511 Shattuck Ave. Berkeley, CA",
+        "website": "https://mozhaifoundation.org/",
+        "info": "The Mozhai Foundation is a philanthropic, not-for-profit institution established in 2013 by the family of Jung Ying Tsao (1929-2011), a scholar, collector, and connoisseur of Chinese art. Based in Berkeley, California, the Foundation seeks to carry on Jung Ying Tsao’s legacy by sponsoring research, publications, exhibitions, and other programs that foster understanding of Chinese art and culture.",
+        "photos": [
+              "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mozhai-3.jpeg?alt=media&token=8a891861-3de3-4af8-a9d0-cf95fe1583e2&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mozhai-1.jpeg?alt=media&token=eebccad1-e033-40ec-a3e1-ae2ddc0922cb&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50", 
+              "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Mozhai-2.jpeg?alt=media&token=8398760e-ad42-437b-80ad-ac3a44f96ef2&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"  
+        ]
+            
+    },
+    {
+        "name": "Tibet Souvenirs",
+        "type": "Gift Shop",
+        "workHours": "11AM - 7PM",
+        "workDays": "Mon - Sat",
+        "number": "Not Available",
+        "address": "1511 Shattuck Ave. Berkeley, CA",
+        "website": "#",
+        "info": "The identity and image of a culture are often represented by souvenirs as evidence of history, heritage, or geography. Souvenirs can also serve as tanible symbols to signify or commemorate travel experiences. In popular culture, souvenirs typically refer to objects that tourists acquire when traveling on vacation. Tibet Souvenir is full of surprises in our garden.",
+        "photos": [
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-8.JPG?alt=media&token=9525a840-bba5-44cb-b250-b3a7e8a2b2b9&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-6.JPG?alt=media&token=1ba95cea-b555-4e98-8890-c1e6797c45a8&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+                "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/GiftShop-4.JPG?alt=media&token=1981efa2-723d-409a-ad29-cbc6200fc2e4&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"
+        ]
+    },
+    {
+        "name": "Kitchen On Fire",
+        "type": "Cooking School",
+        "workHours": "9AM - 5PM",
+        "workDays": "Mon - Fri",
+        "number": "(510) 548-2665",
+        "address": "1511 Shattuck Ave. Berkeley, CA",
+        "website": "https://www.kitchenonfire.com/",
+        "info": "Kitchen on Fire offers hands-on cooking experiences in Berkeley and virtually anywhere. Since 2005, Chef Olive and professional chef instructors have been sharing their knowledge and love for cooking through public classes, team-building and corporate wellness events. Lisa Miller teaches classes with a nutrition focus, promoting healthy living through meals made with high quality ingredients and traditional cooking methods.",
+        "photos": [
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kitchen-11.jpg?alt=media&token=ebb06ab2-cf13-425b-bf3d-b635e86329d5&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kitchen-14.jpeg?alt=media&token=d2c8589e-d5eb-43d8-a471-7c89e5e9af28&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Kitchen-15.jpeg?alt=media&token=77e9044d-8d77-4618-98ec-d39a6adf6d4e&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"
+        ]
+    }
+]

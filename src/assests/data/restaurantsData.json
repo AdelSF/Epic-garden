@@ -17,7 +17,6 @@
              "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/SunnySide-7.JPG?alt=media&token=8af37fa8-5c7a-4733-9549-a3358084b6ad&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50", 
               "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/SunnySide-3.JPG?alt=media&token=f22d3fa1-7f18-46cc-9cd7-922589ca379e&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"  
         ]
-            
     },
     {
         "name": "Kirala 2",
@@ -52,9 +51,9 @@
         "veganOptions": "Available",
         "vegetableOption": "Available",
         "photos": [
-            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50",
-            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/Garden-0.jpg?alt=media&token=0a5f8ca8-3f7c-4574-85a7-3a70b0a5c747&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=600&h=600&dpr=2&q=50"
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/iScream-7.jpg?alt=media&token=f1f4df2c-93ab-4c0f-91c4-eaa9ff430c61&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+            "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/iScream-1.JPG?alt=media&token=9d307e1b-55be-4fc6-a853-dff2e4590865&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50",
+             "https://firebasestorage.googleapis.com/v0/b/epicurious-garden.appspot.com/o/iScream-3.JPG?alt=media&token=a10f373d-f87b-4698-906e-aea93995adeb&auto=format&fit=crop&fm=jpg&ixlib=react-9.5.4&w=450&h=450&dpr=2&q=50"
         ]
     },
     {

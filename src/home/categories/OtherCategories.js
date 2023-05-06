@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Arrow from '../../assests/design-imgs/arrow-down.png';
-import Card from './Slider.tsx';
-
+import ImageDisplayer from './ImageDisplayer.tsx';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 
-
-export default function Category({ foodSellerData }) {
-    const { name, type, foods, address, delivery, number, partyPlatter, veganOptions, vegetableOption, webside, workDays, workHours } = foodSellerData;
+export default function OtherCategories({ noneFoodSellerData }) {
+    const { name, type, address, number, website, workDays, workHours, photos, info } = noneFoodSellerData;
     const [open, setOpen] = useState('none')
-
     return (
         <Accordion onClick={() => setOpen(!open)}>
             <AccordionSummary>
@@ -25,35 +22,24 @@ export default function Category({ foodSellerData }) {
             <MoreDetails open={open}>
                 <MainInfoBox>
                     <InfoBox>
-                        <ItemsHeader>Most Popular</ItemsHeader>
-                        <Items>
-                            {foods.map((food, index) => <Item key={index}>{food}</Item>)}
-                        </Items>
-                    </InfoBox>
-                    <InfoBox>
                         <ItemsHeader>Contact Info</ItemsHeader>
                         <Items>
                             <Item>Phone:{number}</Item>
                             <Item>{address}</Item>
                             <Item>Business days: {workDays}</Item>
                             <Item>Business hours: {workHours}</Item>
-                            <Item>Delivery: {delivery}</Item>
+                            <Item><a href={website} target="_blank" rel="noreferrer">Website</a></Item>
                         </Items>
                     </InfoBox>
                     <InfoBox>
-                        <ItemsHeader>More Info</ItemsHeader>
-                        <Items>
-                            <Item>Party platter: {partyPlatter}</Item>
-                            <Item><a href={webside} target="_blank" rel="noopener">Website</a></Item>
-                            <Item>Vegetarian Food: {vegetableOption}</Item>
-                            <Item>Vegan Food: {veganOptions}</Item>
-                        </Items>
+                        <ItemsHeader>About us</ItemsHeader>
+                        <Items><P>{info}</P></Items>
                     </InfoBox>
                 </MainInfoBox>
                 <ImgBox>
-                    <Card url={foodSellerData.photos[0]}/>
-                    <Card url={foodSellerData.photos[1]}/>
-                    <Card url={foodSellerData.photos[2]}/>
+                    <ImageDisplayer ImgUrl={photos[1]}/>
+                    <ImageDisplayer ImgUrl={photos[0]}/>
+                    <ImageDisplayer ImgUrl={photos[2]}/>
                 </ImgBox>
             </MoreDetails>
         </Accordion>
@@ -132,6 +118,13 @@ const RestaurantType = styled.p`
     color: #707070;
     @media only screen and (max-width: 400px) {
         font-size: .7rem;
+    }
+`
+const P = styled.p`
+    width: 300px;
+    line-height: 2rem;
+    @media only screen and (max-width: 400px) {
+        line-height: 1.2rem;
     }
 `
 const AccordionArrow = styled.img`
